@@ -1,27 +1,28 @@
-﻿=== Elespare: SEO-Optimized Elementor Addons for Blogs, News, & Magazine Websites – 35+ Responsive Post Grids, Sliders, Carousels Widgets, 350+ Customizable Templates, Header/Footer Builder, and Fast-Loading Starter Site Imports. No Coding Needed! ===
+﻿=== EleSpare: SEO-Optimized Elementor Addons for Blogs, News, & Magazine Websites – 35+ Responsive Post Grids, Sliders, Carousels Widgets, 350+ Customizable Templates, Header/Footer Builder, and Fast-Loading Starter Site Imports. No Coding Needed! ===
 Author URI: https://elespare.com/
 Plugin URI: https://elespare.com/
 Contributors: elespare, afthemes
 Tags: elementor addons, elementor widget, elementor, elements, templates
 Tested up to: 6.6
 Requires PHP: 5.3
-Stable tag: 3.3.0
+Stable tag: 3.3.1
 License: GPLv3 or later
 License URI: https://opensource.org/licenses/GPL-3.0 GPL-3.0-only
 
 
 == Description ==
-## Easy Post Grids, Sliders, Templates, Header/Footer Builder, and [Starter Site Imports](https://elespare.com/all-demos/).
-Transform Your Website effortlessly with <a href="https://elespare.com/">Elespare</a>: Craft the Perfect [Blog](https://afthemes.com/plugins/elespare/fashion/), [News](https://demos.afthemes.com/covernews/elenews/), or [Magazine](https://demos.afthemes.com/covernews/elenews/home-3/) Sites using Elementor. No coding skills needed, just [one-click import](https://www.youtube.com/watch?v=8Jq53Pywmk0) for highly customizable templates. Showcase your posts in stunning formats – [banners, grids, lists, carousels, sliders, and more](https://elespare.com/layout-page/) – for FREE!
+## Easy Post Grids, Sliders, Templates, Header/Footer Builder, and Starter Site Imports.
+Transform Your Website effortlessly with <a href="https://elespare.com/">EleSpare</a>: Craft the Perfect [Blog](https://afthemes.com/plugins/elespare/fashion/), [News](https://demos.afthemes.com/covernews/elenews/), or [Magazine](https://demos.afthemes.com/covernews/elenews/home-3/) Sites using Elementor. No coding skills needed, just [one-click import](https://www.youtube.com/watch?v=8Jq53Pywmk0) for highly customizable templates. Showcase your posts in stunning formats – [banners, grids, lists, carousels, sliders, and more](https://elespare.com/layout-page/) – for FREE!
 [youtube https://www.youtube.com/watch?v=8Jq53Pywmk0]
 
 [Try Live Demo](https://tastewp.com/new/?pre-installed-plugin-slug=elespare) | [Explore More](https://elespare.com/) | [Themes](https://afthemes.com/) | [Demo](https://elespare.com/all-demos/) | [Template Kits](https://elespare.com/layout-page/) | [Docs](https://elespare.com/docs/) | [Support](https://afthemes.com/supports/) | [Upgrade](https://elespare.com/pricing/) 
 
 ## Say Goodbye to Coding Hassles
-Are you tired of struggling with complex codes to build a stunning website from scratch? Look no further! Elespare is your go-to solution for effortlessly creating eye-catching designs without any coding expertise. Our user-friendly website [template library](https://elespare.com/all-demos/) is designed specifically for non-coders, offering you a seamless experience from start to finish.
+Are you tired of struggling with complex codes to build a stunning website from scratch? Look no further! EleSpare is your go-to solution for effortlessly creating eye-catching designs without any coding expertise. Our user-friendly website [template library](https://elespare.com/all-demos/) is designed specifically for non-coders, offering you a seamless experience from start to finish.
+[youtube https://youtu.be/elLCTqnQMI0?t=1488]
 
 ## Instantly Captivating Designs
-Why start from scratch when you can have a captivating design within seconds? Elespare's extensive template library ensures that you find the perfect fit for your website. Each starter site demo is meticulously crafted to catch your audience's attention. Take a glance at our diverse range of templates and let your creativity soar.
+Why start from scratch when you can have a captivating design within seconds? EleSpare's extensive template library ensures that you find the perfect fit for your website. Each starter site demo is meticulously crafted to catch your audience's attention. Take a glance at our diverse range of templates and let your creativity soar.
 
 ## Explore Our Template Kits
 Discover the perfect template kit for your website and bring your vision to life. Whether you're in the realm of fashion, sports, recipes, or more, we have a template to suit your needs. Click on the links below to explore and import the kit that resonates with your brand:
@@ -68,7 +69,7 @@ Discover the perfect template kit for your website and bring your vision to life
 	<li><strong>Customize Your Way:</strong> Tailor the imported kit to fit your brand seamlessly. Personalize colors, fonts, and layouts to make it uniquely yours.</li>	
 </ul>
 
-Unleash your creativity and let Elespare redefine your WordPress experience. Your stunning website is just a few clicks away!
+Unleash your creativity and let EleSpare redefine your WordPress experience. Your stunning website is just a few clicks away!
 
 
 ## Celebrating the Success Stories of Our Users
@@ -122,7 +123,7 @@ Unleash your creativity and let Elespare redefine your WordPress experience. You
 <strong>[Try it Now](https://tastewp.com/new/?pre-installed-plugin-slug=elespare)</strong>
 <strong>[Explore More](https://elespare.com/)</strong>
 
-## Envision Amazing Layouts with Elespare
+## Envision Amazing Layouts with EleSpare
 * [POST FLASH (TICKER)](https://elespare.com/layout/post-flash/)
 The news ticker area, which comes with a lot of style options, will assist you in presenting your flash posts.
 * [HERO BANNER 1](https://elespare.com/layout/post-banner/)
@@ -183,7 +184,7 @@ The plugin comes with built-in widgets that aid in the creation of header and fo
 	<li><strong>Expanded Navigation Menu</strong> - Provides you with a list of menus that have already been generated for your website. All you have to do now is select the required one and display it with the expand/collapse style. You may even set unique icons to open and close the menu, among many other choices.</li>
 	<li><strong>Search</strong> - Create a search form with a variety of layout and stylistic possibilities for your website.</li>
 </ul>
-[See Homepage Templates with Elespare Header/Footer](https://elespare.com/all-demos/)
+[See Homepage Templates with EleSpare Header/Footer](https://elespare.com/all-demos/)
 
 ## Build with advanced options and controls
 The <a href="https://elespare.com/">Elementor addon</a>  is appropriate for a news, journal, magazine, publishing, or review website, as well as blogging. Our plugin includes 25 and counting carefully constructed elementor widgets (Free/Pro). With design, controls, and features, we can state that this widgets collection is the best in town.
@@ -221,14 +222,14 @@ Whenever you need to give spaces on your posts contents, Gaps Settings helps you
 * Highly customizable layouts
 * Outstanding support
 
-It's well-designed to help the website rank higher in search engines, and users will receive excellent support from the staff if they run into any issues while using it. Let’s Start Designing Your Dream Site in Minutes with <a href="https://elespare.com/">Elespare</a> !
+It's well-designed to help the website rank higher in search engines, and users will receive excellent support from the staff if they run into any issues while using it. Let’s Start Designing Your Dream Site in Minutes with <a href="https://elespare.com/">EleSpare</a> !
 [Home](https://elespare.com/) | [Elements](https://elespare.com/layout/) | [Homepages](https://elespare.com/all-demos/) | [Docs](https://elespare.com/docs/) | [Support](https://afthemes.com/supports/) | [Premium](https://elespare.com/)
 
 == Frequently Asked Questions ==
 
-**Is Elespare free?**
+**Is EleSpare free?**
 
-Yes, Elespare is a free news, magazine, blog websites, etc building Plugin for WordPress Websites. But definitely, you can get more awesome controls on <a href="https://elespare.com/" target="_blank" rel="">Elespare Pro</a>
+Yes, EleSpare is a free news, magazine, blog websites, etc building Plugin for WordPress Websites. But definitely, you can get more awesome controls on <a href="https://elespare.com/" target="_blank" rel="">EleSpare Pro</a>
 
 **Do I need to code?**
 
@@ -244,25 +245,25 @@ Yes, you need install Elementor page builder plugin and you must have latest ver
 
 **Can I use this with other Elementor plugins?**
 
-Oh yeah! With other plugins, Elespare is performing well.
+Oh yeah! With other plugins, EleSpare is performing well.
 
-**Can I use Elespare with any WordPress theme?**
+**Can I use EleSpare with any WordPress theme?**
 
-Since Elespare has its own designed components for website, it can be used for WordPress themes of any kind.
+Since EleSpare has its own designed components for website, it can be used for WordPress themes of any kind.
 
-**Can I use Elespare on client websites?**
+**Can I use EleSpare on client websites?**
 
-Yes! You will definitely use the widgets of Elespare on yours, as well as the websites of your client.
+Yes! You will definitely use the widgets of EleSpare on yours, as well as the websites of your client.
 
-**Will Elespare slow down my website?**
+**Will EleSpare slow down my website?**
 
-There's just no! The structure of the package and clean code keep it lightweight and simple. Elespare widgets are designed with ease and performance in mind. Therefore, it can in no way impact the pace and efficiency of your website.
+There's just no! The structure of the package and clean code keep it lightweight and simple. EleSpare widgets are designed with ease and performance in mind. Therefore, it can in no way impact the pace and efficiency of your website.
 
 
 
-**Can I explore the Elespare's demos?**
+**Can I explore the EleSpare's demos?**
 
-Definitely, you can explore all of the demos on <a href="https://elespare.com/" target="_blank" rel="">Elespare Website.</a>
+Definitely, you can explore all of the demos on <a href="https://elespare.com/" target="_blank" rel="">EleSpare Website.</a>
 
 
 == Installation ==
@@ -273,17 +274,17 @@ Definitely, you can explore all of the demos on <a href="https://elespare.com/" 
 * You will get beautiful custom widgets on page/post editor to build your site.
 
 == Screenshots ==
-1. Elespare - News Magazine and Blog Elements Addons for Elementor with Header/Footer Builder
-2. Elespare - Header Builder and the Elements
-3. Elespare - Posts Ticker (Flash)
-4. Elespare - Posts Banners
-5. Elespare - Posts Lists
-6. Elespare - Posts Tile
-7. Elespare - Posts Express Lists
-8. Elespare - Posts Express Grid
-9. Elespare - Footer Builder and the Elements
-10. Elespare - Excellent controls at your fingertips
-11. Elespare - Sky is the limit
+1. EleSpare - News Magazine and Blog Elements Addons for Elementor with Header/Footer Builder
+2. EleSpare - Header Builder and the Elements
+3. EleSpare - Posts Ticker (Flash)
+4. EleSpare - Posts Banners
+5. EleSpare - Posts Lists
+6. EleSpare - Posts Tile
+7. EleSpare - Posts Express Lists
+8. EleSpare - Posts Express Grid
+9. EleSpare - Footer Builder and the Elements
+10. EleSpare - Excellent controls at your fingertips
+11. EleSpare - Sky is the limit
 
 
 == Changelog ==
