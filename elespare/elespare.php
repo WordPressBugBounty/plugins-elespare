@@ -1,20 +1,20 @@
 <?php
 
 /**
- * Elespare: Ultimate Blog Addons for Elementor – Easy Post Grids, Sliders, Templates, Header/Footer Builder, and Starter Site Imports
+ * Elespare: Dynamic Elementor Addons for News, Blogs & Magazines – 35+ Post Grids, Sliders, Carousels, Lists & Tiles, 350+ Templates, Header/Footer Builder & Fast Import
  *
  * @package Elespare
  *
  * Plugin Name: Elespare - Ultimate Blog Addons for Elementor
  * Description: Easy Post Grids, Sliders, Templates, Header/Footer Builder, and Starter Site Imports
  * Plugin URI:  https://elespare.com/
- * Version:     3.3.1
- * Elementor tested up to:  3.24.7
- * Elementor Pro tested up to:  3.24.7
+ * Version:     3.3.2
+ * Elementor tested up to:  3.25.0
+ * Elementor Pro tested up to:  3.25.1
  * Author:      Elespare
  * Author URI:  https://elespare.com/
  * Text Domain: elespare
- * Build Your Blog, News & Magazine Websites with Expert-Designed Template Kits. One Click Import: No Coding Skills Required!
+ * Dynamic Elementor Addons for News, Blogs & Magazines – 35+ Post Grids, Sliders, Carousels, Lists & Tiles, 350+ Templates, Header/Footer Builder & Fast Import
  */
 
 if (!defined('ABSPATH')) {
@@ -22,7 +22,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-defined('ELESPARE_VERSION') or define('ELESPARE_VERSION', '3.3.1');
+defined('ELESPARE_VERSION') or define('ELESPARE_VERSION', '3.3.2');
 defined('ELESPARE') or define('ELESPARE', __FILE__);
 defined('ELESPARE_PLUGIN_BASE') or define('ELESPARE_PLUGIN_BASE', plugin_basename(ELESPARE));
 defined('ELESPARE_DIR_PATH') or define('ELESPARE_DIR_PATH', plugin_dir_path(ELESPARE));

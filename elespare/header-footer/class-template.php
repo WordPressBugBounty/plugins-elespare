@@ -52,15 +52,19 @@ class ElespaeTemplate {
 	}
 
 	public function elespare_enqueue_scripts(){
-		if ( class_exists( '\Elementor\Plugin' ) ) {
-			$elementor = \Elementor\Plugin::instance();
-			$elementor->frontend->enqueue_styles();
-		}
+		if (class_exists('\Elementor\Plugin')) {
+      $elementor = \Elementor\Plugin::instance();
+      if (method_exists($elementor->frontend, 'enqueue_styles')) {
+        $elementor->frontend->enqueue_styles();
+      }
+    }
 
-		if ( class_exists( '\ElementorPro\Plugin' ) ) {
-			$elementor_pro = \ElementorPro\Plugin::instance();
-			$elementor_pro->enqueue_styles();
-		}
+    if (class_exists('\ElementorPro\Plugin')) {
+      $elementor_pro = \ElementorPro\Plugin::instance();
+      if (method_exists($elementor_pro, 'enqueue_styles')) {
+        $elementor_pro->enqueue_styles();
+      }
+    }
 
 		$header_id = $this->template_header_id();
 		if ( $header_id ) {
