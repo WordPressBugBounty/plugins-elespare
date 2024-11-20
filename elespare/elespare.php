@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Elespare: Dynamic Elementor Addons for News, Blogs & Magazines – 35+ Post Grids, Sliders, Carousels, Lists & Tiles, 350+ Templates, Header/Footer Builder & Fast Import
+ * EleSpare: Elementor Newspaper, Magazine and Blog Addons – 35+ Post Grid, Slider, Carousel, List & Tile, 350+ Templates, Drag & Drop Header/Footer and Page Builder, 1-Click Import - No Coding Hassle!
  *
  * @package Elespare
  *
- * Plugin Name: Elespare - Ultimate Blog Addons for Elementor
- * Description: Easy Post Grids, Sliders, Templates, Header/Footer Builder, and Starter Site Imports
+ * Plugin Name: Elespare - Elementor Newspaper, Magazine and Blog Addons
+ * Description: 350+ Templates, 35+ Post Grid, Slider, Carousel, List & Tile Widgets, Drag & Drop Header/Footer and Page Builder, 1-Click Import - No Coding Hassle!
  * Plugin URI:  https://elespare.com/
- * Version:     3.3.2
+ * Version:     3.3.3
  * Elementor tested up to:  3.25.0
  * Elementor Pro tested up to:  3.25.1
  * Author:      Elespare
@@ -22,7 +22,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-defined('ELESPARE_VERSION') or define('ELESPARE_VERSION', '3.3.2');
+defined('ELESPARE_VERSION') or define('ELESPARE_VERSION', '3.3.3');
 defined('ELESPARE') or define('ELESPARE', __FILE__);
 defined('ELESPARE_PLUGIN_BASE') or define('ELESPARE_PLUGIN_BASE', plugin_basename(ELESPARE));
 defined('ELESPARE_DIR_PATH') or define('ELESPARE_DIR_PATH', plugin_dir_path(ELESPARE));
