@@ -5,11 +5,8 @@ namespace Elespare\Widgets;
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
-use Elementor\Group_Control_Border;
-use Elementor\Icons_Manager;
 use Elementor\Group_Control_Image_Size;
-use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
-use Elementor\Core\Kits\Documents\Tabs\Global_Color;
+use Elementor\Plugin;
 
 // Security Note: Blocks direct access to the plugin PHP files.
 defined('ABSPATH') || die();
@@ -52,6 +49,11 @@ class PostBannerOne extends Widget_Base
   public function get_title()
   {
     return esc_html__('Hero Banner', 'elespare');
+  }
+
+  public function has_widget_inner_wrapper(): bool
+  {
+    return ! Plugin::$instance->experiments->is_feature_active('e_optimized_markup');
   }
 
 

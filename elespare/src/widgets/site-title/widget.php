@@ -12,10 +12,8 @@ use Elementor\Widget_Base;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
-use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
 use Elementor\Utils;
-use Elementor\Group_Control_Text_Shadow;
-use Elementor\Core\Kits\Documents\Tabs\Global_Colors;
+use Elementor\Plugin;
 
 
 if (! defined('ABSPATH')) {
@@ -59,6 +57,12 @@ class SiteTitle extends Widget_Base
   {
     return esc_html__('Site Title', 'elespare');
   }
+
+  public function has_widget_inner_wrapper(): bool
+  {
+    return ! Plugin::$instance->experiments->is_feature_active('e_optimized_markup');
+  }
+
 
   /**
    * Retrieve the widget icon.

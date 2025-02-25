@@ -1,20 +1,20 @@
 <?php
 
 /**
- * EleSpare: Elementor Newspaper, Magazine and Blog Addons – 35+ Post Grid, Slider, Carousel, List & Tile, 350+ Templates, Drag & Drop Header/Footer and Page Builder, 1-Click Import - No Coding Hassle!
+ * Elespare: Ultimate Blog Addons for Elementor – Easy Post Grids, Sliders, Templates, Header/Footer Builder, and Starter Site Imports
  *
  * @package Elespare
  *
- * Plugin Name: Elespare - Elementor Newspaper, Magazine and Blog Addons
- * Description: 350+ Templates, 35+ Post Grid, Slider, Carousel, List & Tile Widgets, Drag & Drop Header/Footer and Page Builder, 1-Click Import - No Coding Hassle!
+ * Plugin Name: Elespare - Ultimate Blog Addons for Elementor
+ * Description: Easy Post Grids, Sliders, Templates, Header/Footer Builder, and Starter Site Imports
  * Plugin URI:  https://elespare.com/
- * Version:     3.3.3
- * Elementor tested up to:  3.25.0
- * Elementor Pro tested up to:  3.25.1
+ * Version:     3.3.4
+ * Elementor tested up to:  3.27.6
+ * Elementor Pro tested up to:  3.27.6
  * Author:      Elespare
  * Author URI:  https://elespare.com/
  * Text Domain: elespare
- * Dynamic Elementor Addons for News, Blogs & Magazines – 35+ Post Grids, Sliders, Carousels, Lists & Tiles, 350+ Templates, Header/Footer Builder & Fast Import
+ * Build Your Blog, News & Magazine Websites with Expert-Designed Template Kits. One Click Import: No Coding Skills Required!
  */
 
 if (!defined('ABSPATH')) {
@@ -22,7 +22,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-defined('ELESPARE_VERSION') or define('ELESPARE_VERSION', '3.3.3');
+defined('ELESPARE_VERSION') or define('ELESPARE_VERSION', '3.3.4');
 defined('ELESPARE') or define('ELESPARE', __FILE__);
 defined('ELESPARE_PLUGIN_BASE') or define('ELESPARE_PLUGIN_BASE', plugin_basename(ELESPARE));
 defined('ELESPARE_DIR_PATH') or define('ELESPARE_DIR_PATH', plugin_dir_path(ELESPARE));
@@ -52,7 +52,7 @@ final class Elespare
      * @since 1.0.0
      * @var string The plugin version.
      */
-    const VERSION = '2.1.1';
+    const VERSION = '3.3.2';
 
     /**
      * Minimum Elementor Version

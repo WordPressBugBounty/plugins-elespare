@@ -1,11 +1,11 @@
-﻿=== EleSpare: Elementor Newspaper, Magazine and Blog Addons – 35+ Post Grid, Slider, Carousel, List & Tile, 350+ Templates, Drag & Drop Header/Footer and Page Builder, 1-Click Import - No Coding Hassle! ===
+﻿=== EleSpare: Elementor Newspaper, Magazine & Blog Addons – 35+ Post Grids, Sliders, Carousels, Lists & Tiles, 350+ Templates, Drag & Drop Header/Footer Builder, Page Builder, 1-Click Import – No Coding Hassle ===
 Author URI: https://elespare.com/
 Plugin URI: https://elespare.com/
 Contributors: elespare, afthemes
-Tags: elementor addons, elementor widget, elementor, elements, templates
+Tags: elementor, elementor addons, news, magazine, post grid
 Tested up to: 6.7
 Requires PHP: 5.3
-Stable tag: 3.3.3
+Stable tag: 3.3.4
 License: GPLv3 or later
 License URI: https://opensource.org/licenses/GPL-3.0 GPL-3.0-only
 
@@ -288,6 +288,17 @@ Definitely, you can explore all of the demos on <a href="https://elespare.com/" 
 
 
 == Changelog ==
+
+= 3.3.4 =
+* Elementor Updates Compatibility
+* Security Updates
+* Design Imporovements
+* Controls Imporovements
+
+= 3.3.3 =
+* Elementor Updates Compatibility
+* Design Imporovements
+* Controls Imporovements
 
 = 3.3.2 =
 * Elementor Updates Compatibility

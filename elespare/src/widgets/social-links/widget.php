@@ -5,13 +5,8 @@ namespace Elespare\Widgets;
 use Elementor\Widget_Base;
 use Elementor\Repeater;
 use Elementor\Group_Control_Typography;
-use Elementor\Utils;
-use Elementor\Control_Media;
 use Elementor\Controls_Manager;
-use Elementor\Group_Control_Border;
-use Elementor\Group_Control_Box_Shadow;
-use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
-use Elementor\Core\Kits\Documents\Tabs\Global_Color;
+use Elementor\Plugin;
 
 // Security Note: Blocks direct access to the plugin PHP files.
 defined('ABSPATH') || die();
@@ -52,6 +47,12 @@ class SocialLinks extends Widget_Base
   {
     return esc_html__('Social Links', 'elespare');
   }
+
+  public function has_widget_inner_wrapper(): bool
+  {
+    return ! Plugin::$instance->experiments->is_feature_active('e_optimized_markup');
+  }
+
 
   public function get_custom_help_url()
   {

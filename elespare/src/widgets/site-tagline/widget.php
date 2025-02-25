@@ -11,9 +11,7 @@ namespace Elespare\Widgets;
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
-use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
-use Elementor\Group_Control_Text_Shadow;
-use Elementor\Core\Kits\Documents\Tabs\Global_Colors;
+use Elementor\Plugin;
 
 if (! defined('ABSPATH')) {
   exit;   // Exit if accessed directly.
@@ -54,8 +52,14 @@ class SiteTagline extends Widget_Base
    */
   public function get_title()
   {
-    return esc_html__('Site Tagline', 'elespare');
+    return esc_html__('Site Taglinssssse', 'elespare');
   }
+
+  public function has_widget_inner_wrapper(): bool
+  {
+    return ! Plugin::$instance->experiments->is_feature_active('e_optimized_markup');
+  }
+
 
   /**
    * Retrieve the widget icon.
@@ -248,7 +252,7 @@ class SiteTagline extends Widget_Base
    * @since 1.0.0
    * @access protected
    */
-  protected function content_template()
+  protected function render_content_template()
   {
   ?>
 
@@ -273,8 +277,8 @@ class SiteTagline extends Widget_Base
    * @since 1.0.0
    * @access protected
    */
-  protected function _content_template()
+  protected function content_template()
   {
-    $this->content_template();
+    $this->render_content_template();
   }
 }
