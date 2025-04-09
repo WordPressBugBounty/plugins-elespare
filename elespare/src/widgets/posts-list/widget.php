@@ -549,9 +549,9 @@ class PostList extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'     => '_section_widget_title_color_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+        // ],
         'selector' => '{{WRAPPER}} .elespare-widget-title-section .elespare-widget-title .elespare-section-title',
       ]
     );
@@ -747,9 +747,9 @@ class PostList extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'     => 'posts_spotlight_title_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+        // ],
         'fields_options' => [
           'typography' => [
             'default' => 'yes'
@@ -781,9 +781,9 @@ class PostList extends Widget_Base
       [
         'name'     => 'posts_title_style_typography',
         'label'    => esc_html__('spotlight Typography', 'elespare'),
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+        // ],
         'fields_options' => [
           'typography' => [
             'default' => 'yes'
@@ -954,9 +954,9 @@ class PostList extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'     => 'posts_category_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
+        // ],
         'fields_options' => [
           'typography' => [
             'default' => 'yes'
@@ -964,7 +964,7 @@ class PostList extends Widget_Base
           'font_size' => [
             'default' => [
               'unit' => 'px',
-              'size' => '10',
+              'size' => '12',
             ],
           ],
           'font_weight' => [
@@ -1129,9 +1129,9 @@ class PostList extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'     => 'posts_meta_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
+        // ],
         'fields_options' => [
           'typography' => [
             'default' => 'yes'
@@ -1139,7 +1139,7 @@ class PostList extends Widget_Base
           'font_size' => [
             'default' => [
               'unit' => 'px',
-              'size' => '11',
+              'size' => '12',
             ],
           ],
           'font_weight' => [

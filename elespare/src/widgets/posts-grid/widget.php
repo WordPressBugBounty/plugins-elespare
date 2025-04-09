@@ -671,9 +671,9 @@ class PostGrid extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'     => '_section_widget_title_color_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+        // ],
         'selector' => '{{WRAPPER}} .elespare-widget-title-section .elespare-widget-title .elespare-section-title',
       ]
     );
@@ -890,9 +890,9 @@ class PostGrid extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'     => 'posts_title_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+        // ],
         'fields_options' => [
           'typography' => [
             'default' => 'yes'
@@ -1058,9 +1058,9 @@ class PostGrid extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'     => 'posts_category_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+        // ],
         'fields_options' => [
           'typography' => [
             'default' => 'yes'
@@ -1068,7 +1068,7 @@ class PostGrid extends Widget_Base
           'font_size' => [
             'default' => [
               'unit' => 'px',
-              'size' => '10',
+              'size' => '12',
             ],
           ],
           'font_weight' => [
@@ -1228,9 +1228,9 @@ class PostGrid extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'     => 'posts_meta_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+        // ],
         'fields_options' => [
           'typography' => [
             'default' => 'yes'
@@ -1238,7 +1238,7 @@ class PostGrid extends Widget_Base
           'font_size' => [
             'default' => [
               'unit' => 'px',
-              'size' => '11',
+              'size' => '12',
             ],
           ],
           'font_weight' => [
@@ -1464,9 +1464,9 @@ class PostGrid extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'      => 'posts_content_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+        // ],
         'selector'  => '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap .elespare-posts-grid-post-items  .elespare-exceprt p',
       ]
     );
@@ -1562,9 +1562,9 @@ class PostGrid extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'      => 'posts_readmore_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+        // ],
         'selector'  => '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap .elespare-posts-grid-post-items  .read-more-btn',
       ]
     );

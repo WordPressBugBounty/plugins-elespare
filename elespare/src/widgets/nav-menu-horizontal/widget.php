@@ -462,10 +462,8 @@ class NavigationHorizontalMenu extends Widget_Base
 
         ],
 
-        'selectors' => array(
-          '{{WRAPPER}} div.elespare-menu > ul > li > a',
-          '{{WRAPPER}} ul.elespare-menu > li > a',
-        ),
+        'selector' => '{{WRAPPER}} ul.elespare-menu > li > a'
+
       )
     );
 

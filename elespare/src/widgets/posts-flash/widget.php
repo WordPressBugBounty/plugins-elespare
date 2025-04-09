@@ -341,9 +341,9 @@ class PostFlash extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'     => 'posts_title_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+        // ],
         'fields_options' => [
           'typography' => [
             'default' => 'yes'
@@ -565,9 +565,9 @@ class PostFlash extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'     => 'breaking_title_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+        // ],
         'fields_options' => [
           'typography' => [
             'default' => 'no'

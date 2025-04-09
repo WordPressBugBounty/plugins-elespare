@@ -1461,9 +1461,9 @@ class MainBannerOne extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'     => '_section_widget_title_color_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+        // ],
         'selector' => '{{WRAPPER}} .elespare-widget-title-section .elespare-widget-title .elespare-section-title',
       ]
     );
@@ -1594,9 +1594,9 @@ class MainBannerOne extends Widget_Base
       [
         'label' => 'Slider Title Typography',
         'name'     => 'posts_carousel_title_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+        // ],
         'fields_options' => [
           'typography' => [
             'default' => 'yes'
@@ -1795,9 +1795,9 @@ class MainBannerOne extends Widget_Base
       [
         'label'  => 'Grid Title Typography',
         'name'     => 'posts_title_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+        // ],
 
         'fields_options' => [
           'typography' => [
@@ -1923,9 +1923,9 @@ class MainBannerOne extends Widget_Base
         'label'   => 'Trending Title Typography',
         'name'     => 'posts_trending_title_style_typography',
         'separator' => 'before',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+        // ],
         'fields_options' => [
           'typography' => [
             'default' => 'yes'
@@ -2390,9 +2390,9 @@ class MainBannerOne extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'     => 'posts_category_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
+        // ],
         'fields_options' => [
           'typography' => [
             'default' => 'yes'
@@ -2400,7 +2400,7 @@ class MainBannerOne extends Widget_Base
           'font_size' => [
             'default' => [
               'unit' => 'px',
-              'size' => '10',
+              'size' => '12',
             ],
           ],
           'font_weight' => [
@@ -2941,9 +2941,9 @@ class MainBannerOne extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'     => 'posts_editor_category_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
+        // ],
         'fields_options' => [
           'typography' => [
             'default' => 'yes'
@@ -2951,7 +2951,7 @@ class MainBannerOne extends Widget_Base
           'font_size' => [
             'default' => [
               'unit' => 'px',
-              'size' => '10',
+              'size' => '12',
             ],
           ],
           'font_weight' => [
@@ -3487,9 +3487,9 @@ class MainBannerOne extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'     => 'posts_category_trending_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
+        // ],
         'fields_options' => [
           'typography' => [
             'default' => 'yes'
@@ -3630,9 +3630,9 @@ class MainBannerOne extends Widget_Base
       [
         'label' => 'Slider Meta Typography',
         'name'     => 'posts_slider_meta_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
+        // ],
         'fields_options' => [
           'typography' => [
             'default' => 'yes'
@@ -3640,7 +3640,7 @@ class MainBannerOne extends Widget_Base
           'font_size' => [
             'default' => [
               'unit' => 'px',
-              'size' => '11',
+              'size' => '12',
             ],
           ],
           'font_weight' => [
@@ -3832,9 +3832,9 @@ class MainBannerOne extends Widget_Base
       [
         'label' => 'Grid Meta Typography',
         'name'     => 'posts_grid_meta_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
+        // ],
         'fields_options' => [
           'typography' => [
             'default' => 'yes'
@@ -3842,7 +3842,7 @@ class MainBannerOne extends Widget_Base
           'font_size' => [
             'default' => [
               'unit' => 'px',
-              'size' => '11',
+              'size' => '12',
             ],
           ],
           'font_weight' => [
@@ -4153,9 +4153,9 @@ class MainBannerOne extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'      => 'posts_content_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
+        // ],
         'selector'  => '{{WRAPPER}} .elespare-main-banner-wrap .elespare-posts-wrap .elespare-posts-carousel-post-items  .elespare-exceprt p',
       ]
     );
@@ -4275,9 +4275,9 @@ class MainBannerOne extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'      => 'posts_content_grid_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
+        // ],
         'selector'  => '{{WRAPPER}} .elespare-section-grid .elespare-posts-grid-post-items .elespare-exceprt p , {{WRAPPER}} .elespare-posts-grid-wrap .elespare-posts-grid-post-items .elespare-exceprt p',
       ]
     );
@@ -4333,9 +4333,9 @@ class MainBannerOne extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'      => 'posts_slider_readmore_style_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT,
+        // ],
         'selector'  => '{{WRAPPER}} .elespare-main-banner-wrap .elespare-posts-wrap .elespare-posts-carousel-post-items  .elespare-exceprt .read-more-btn'
       ]
     );

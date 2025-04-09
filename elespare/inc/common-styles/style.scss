@@ -5,25 +5,25 @@
 		// margin-bottom: 5px !important;
 		padding: 0;
 		line-height: 1;
-		font-size: 11px;
+		font-size: 12px;
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
 		column-gap: 7px;
-		row-gap: 3px;
+		row-gap: 7px;
 
 		li {
 			display: inline-block;
 			padding: 0 !important;
 			font-size: 10px;
-			opacity: 0.9;
+			opacity: 0.95;
 
 			a {
 				display: inline-block;
-				padding: 3px 6px;
+				padding: 5px 10px;
 				line-height: 1 !important;
 				letter-spacing: 0.35px;
-				font-size: 11px;
+				font-size: 12px;
 			}
 		}
 

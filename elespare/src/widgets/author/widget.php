@@ -494,9 +494,9 @@ class Author extends Widget_Base
       Group_Control_Typography::get_type(),
       [
         'name'     => '_section_widget_title_color_typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+        // ],
         'selector' => '{{WRAPPER}} .elespare-widget-title-section .elespare-widget-title .elespare-section-title',
       ]
     );
@@ -521,9 +521,9 @@ class Author extends Widget_Base
       [
         'name'     => 'author_name_style_typography',
         'label'    => 'Atuhor Typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+        // ],
         'fields_options' => [
           'typography' => [
             'default' => 'yes'
@@ -549,9 +549,9 @@ class Author extends Widget_Base
       [
         'name'     => 'author_description_style_typography',
         'label'    => 'Description Typography',
-        'global' => [
-          'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
-        ],
+        // 'global' => [
+        //   'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY,
+        // ],
         'fields_options' => [
           'typography' => [
             'default' => 'yes'
