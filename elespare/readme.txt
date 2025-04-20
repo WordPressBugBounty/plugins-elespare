@@ -2,10 +2,10 @@
 Author URI: https://elespare.com/
 Plugin URI: https://elespare.com/
 Contributors: elespare, afthemes
-Tags: elementor addons, news magazine builder, header footer builder, post grid widget, template kit
-Tested up to: 6.7
+Tags: elementor addons, elementor extensions, header footer builder, widgets for elementor, elementor widgets
+Tested up to: 6.8
 Requires PHP: 5.3
-Stable tag: 3.3.5
+Stable tag: 3.3.6
 License: GPLv3 or later
 License URI: https://opensource.org/licenses/GPL-3.0 GPL-3.0-only
 
