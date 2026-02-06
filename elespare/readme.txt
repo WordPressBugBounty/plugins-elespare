@@ -4,9 +4,9 @@ Plugin URI: https://elespare.com/
 Contributors: elespare, afthemes
 Tags: blog, news, Magazine, post carousel, post grid
 Donate link: https://www.elespare.com/pricing/
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 5.3
-Stable tag: 3.3.8
+Stable tag: 3.3.10
 License: GPLv3 or later
 License URI: https://opensource.org/licenses/GPL-3.0 GPL-3.0-only
 
