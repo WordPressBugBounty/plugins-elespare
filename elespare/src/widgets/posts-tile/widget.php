@@ -769,26 +769,26 @@ class PostTile extends Widget_Base
           ],
 
         ],
-        'selector' => '{{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-1 .elespare-posts-tile-post-items:nth-child(1) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-2 .elespare-posts-tile-post-items:nth-child(4n+1) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-2 .elespare-posts-tile-post-items:nth-child(4n) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-3 .elespare-posts-tile-post-items:nth-child(3) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-4 .elespare-posts-tile-post-items:nth-child(2) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-5 .elespare-posts-tile-post-items:nth-child(1) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-6 .elespare-posts-tile-post-items:nth-child(5) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-7 .elespare-posts-tile-post-items:nth-child(2n+5):nth-child(3n+2) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-7 .elespare-posts-tile-post-items:nth-child(5n+2):nth-child(2n+3) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-8 .elespare-posts-tile-post-items:nth-child(5n) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-10 .elespare-posts-tile-post-items:nth-child(3n) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-11 .elespare-posts-tile-post-items:nth-child(6n+1) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-11 .elespare-posts-tile-post-items:nth-child(6n+5) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-12 .elespare-posts-tile-post-items:nth-child(6n+1) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-12 .elespare-posts-tile-post-items:nth-child(6n+5) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-13 .elespare-posts-tile-post-items:nth-child(3n+2) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-14 .elespare-posts-tile-post-items:nth-child(1) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-15 .elespare-posts-tile-post-items:nth-child(4n+1) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-15 .elespare-posts-tile-post-items:nth-child(4n) h4 a > span,
-                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-16 .elespare-posts-tile-post-items:nth-child(4n) h4 a > span',
+        'selector' => '{{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-1 .elespare-posts-tile-post-items:nth-child(1) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-2 .elespare-posts-tile-post-items:nth-child(4n+1) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-2 .elespare-posts-tile-post-items:nth-child(4n) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-3 .elespare-posts-tile-post-items:nth-child(3) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-4 .elespare-posts-tile-post-items:nth-child(2) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-5 .elespare-posts-tile-post-items:nth-child(1) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-6 .elespare-posts-tile-post-items:nth-child(5) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-7 .elespare-posts-tile-post-items:nth-child(2n+5):nth-child(3n+2) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-7 .elespare-posts-tile-post-items:nth-child(5n+2):nth-child(2n+3) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-8 .elespare-posts-tile-post-items:nth-child(5n) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-10 .elespare-posts-tile-post-items:nth-child(3n) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-11 .elespare-posts-tile-post-items:nth-child(6n+1) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-11 .elespare-posts-tile-post-items:nth-child(6n+5) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-12 .elespare-posts-tile-post-items:nth-child(6n+1) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-12 .elespare-posts-tile-post-items:nth-child(6n+5) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-13 .elespare-posts-tile-post-items:nth-child(3n+2) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-14 .elespare-posts-tile-post-items:nth-child(1) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-15 .elespare-posts-tile-post-items:nth-child(4n+1) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-15 .elespare-posts-tile-post-items:nth-child(4n) h3 a > span,
+                {{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap.tile-style-16 .elespare-posts-tile-post-items:nth-child(4n) h3 a > span',
 
 
       ]
@@ -836,7 +836,7 @@ class PostTile extends Widget_Base
           ],
 
         ],
-        'selector' => '{{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap .elespare-posts-tile-post-items h4 a > span',
+        'selector' => '{{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap .elespare-posts-tile-post-items h3 a > span',
       ]
     );
 
@@ -861,7 +861,7 @@ class PostTile extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => [
-          '{{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap .elespare-posts-tile-post-items h4 a >span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap .elespare-posts-tile-post-items h3 a >span'       => 'color: {{VALUE}};',
         ],
       ]
     );
@@ -887,7 +887,7 @@ class PostTile extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => array(
-          '{{WRAPPER}}.elementor-widget-post-tile .elespare-tile-wrap .elespare-posts-wrap .elespare-posts-tile-post-items h4 a:hover >span' => 'color: {{VALUE}};',
+          '{{WRAPPER}}.elementor-widget-post-tile .elespare-tile-wrap .elespare-posts-wrap .elespare-posts-tile-post-items h3 a:hover >span' => 'color: {{VALUE}};',
         ),
       )
     );
@@ -902,7 +902,7 @@ class PostTile extends Widget_Base
         'type'       => Controls_Manager::DIMENSIONS,
         'size_units' => ['px'],
         'selectors'  => [
-          '{{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap .elespare-posts-tile-post-items h4 ' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+          '{{WRAPPER}} .elespare-tile-wrap .elespare-posts-wrap .elespare-posts-tile-post-items h3 ' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
         ],
       ]
     );
@@ -1363,10 +1363,10 @@ class PostTile extends Widget_Base
     $layouts = $settings['layout_posts_style'];
     $all_posts = elespare_get_all_posts($settings);
     if ($settings['_section_title']) :
-      printf(
-        '<div %1$s><h4 class="elespare-widget-title"><span class="elespare-section-title-before"></span><span class="elespare-section-title">%2$s </span><span class="elespare-section-title-after"></span></h4></div>',
+
+      elespare_section_title(
         $this->get_render_attribute_string('layout-wrap'),
-        elespare_kses_basic($settings['_section_title'])
+        $settings['_section_title']
       );
     endif;
     $gravatar_class = '';

@@ -1180,7 +1180,7 @@ class PostBannerOne extends Widget_Base
           ],
 
         ],
-        'selector' => '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-grid .elespare-posts-wrap .elespare-posts-grid-post-items h4 a > span',
+        'selector' => '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-grid .elespare-posts-wrap .elespare-posts-grid-post-items h3 a > span',
       ]
     );
 
@@ -1205,7 +1205,7 @@ class PostBannerOne extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => [
-          '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-grid .elespare-posts-wrap .elespare-posts-grid-post-items h4 a > span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-grid .elespare-posts-wrap .elespare-posts-grid-post-items h3 a > span'       => 'color: {{VALUE}};',
         ]
       ]
     );
@@ -1232,7 +1232,7 @@ class PostBannerOne extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => array(
-          '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-grid .elespare-posts-wrap .elespare-posts-grid-post-items h4 a:hover span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-grid .elespare-posts-wrap .elespare-posts-grid-post-items h3 a:hover span'       => 'color: {{VALUE}};',
         ),
       )
     );
@@ -1283,7 +1283,7 @@ class PostBannerOne extends Widget_Base
           ],
 
         ],
-        'selector' => '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-slider .elespare-posts-wrap .elespare-posts-carousel-post-items h4 a > span',
+        'selector' => '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-slider .elespare-posts-wrap .elespare-posts-carousel-post-items h3 a > span',
       ]
     );
 
@@ -1310,7 +1310,7 @@ class PostBannerOne extends Widget_Base
         ],
 
         'selectors' => [
-          '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-slider .elespare-posts-wrap .elespare-posts-carousel-post-items h4 a > span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-slider .elespare-posts-wrap .elespare-posts-carousel-post-items h3 a > span'       => 'color: {{VALUE}};',
         ]
       ]
     );
@@ -1336,7 +1336,7 @@ class PostBannerOne extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => array(
-          '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-slider .elespare-posts-wrap .elespare-posts-carousel-post-items h4 a:hover span' => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-slider .elespare-posts-wrap .elespare-posts-carousel-post-items h3 a:hover span' => 'color: {{VALUE}};',
         ),
       )
     );
@@ -1515,7 +1515,7 @@ class PostBannerOne extends Widget_Base
           ],
 
         ],
-        'selector' => '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-trending .elespare-posts-wrap .elespare-posts-trending-post-items h4 a > span',
+        'selector' => '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-trending .elespare-posts-wrap .elespare-posts-trending-post-items h3 a > span',
         'condition' => [
           'show_title' => 'yes',
         ]
@@ -1547,7 +1547,7 @@ class PostBannerOne extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => [
-          '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-trending .elespare-posts-wrap .elespare-posts-trending-post-items h4 a > span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-trending .elespare-posts-wrap .elespare-posts-trending-post-items h3 a > span'       => 'color: {{VALUE}};',
         ],
         'condition' => [
           'dark_mode!' => 'yes',
@@ -1566,7 +1566,7 @@ class PostBannerOne extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => [
-          '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-trending .elespare-posts-wrap .elespare-posts-trending-post-items h4 a > span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-trending .elespare-posts-wrap .elespare-posts-trending-post-items h3 a > span'       => 'color: {{VALUE}};',
         ],
         'condition' => [
           'dark_mode' => 'yes',
@@ -1612,7 +1612,7 @@ class PostBannerOne extends Widget_Base
         ],
 
         'selectors' => array(
-          '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-trending .elespare-posts-wrap .elespare-posts-trending-post-items h4 a:hover span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-banner-one-wrap .elespare-section-trending .elespare-posts-wrap .elespare-posts-trending-post-items h3 a:hover span'       => 'color: {{VALUE}};',
         ),
       )
     );
@@ -2406,10 +2406,10 @@ class PostBannerOne extends Widget_Base
         <div class="elespare-section-grid">
           <?php
           if ($settings['title']) :
-            printf(
-              '<div %1$s><h4 class="elespare-widget-title"><span class="elespare-section-title-before"></span><span class="elespare-section-title">%2$s </span><span class="elespare-section-title-after"></span></h4></div>',
+
+            elespare_section_title(
               $this->get_render_attribute_string('layout-wrap'),
-              elespare_kses_basic($settings['title'])
+              $settings['title']
             );
           endif;
           ?>
@@ -2455,10 +2455,10 @@ class PostBannerOne extends Widget_Base
         <div class="elespare-section-carousel-title">
           <?php
           if ($settings['carousel_title']) :
-            printf(
-              '<div %1$s><h4 class="elespare-widget-title"><span class="elespare-section-title-before"></span><span class="elespare-section-title">%2$s </span><span class="elespare-section-title-after"></span></h4></div>',
+
+            elespare_section_title(
               $this->get_render_attribute_string('layout-wrap'),
-              elespare_kses_basic($settings['carousel_title'])
+              $settings['carousel_title']
             );
           endif;
           $carousel_posts = elespare_get_all_posts_in_banner($settings, $sections = 'carousel');
@@ -2522,10 +2522,10 @@ class PostBannerOne extends Widget_Base
         <div class="elespare-section-trending-title">
           <?php
           if ($settings['trending_title']) :
-            printf(
-              '<div %1$s><h4 class="elespare-widget-title"><span class="elespare-section-title-before"></span><span class="elespare-section-title">%2$s </span><span class="elespare-section-title-after"></span></h4></div>',
+
+            elespare_section_title(
               $this->get_render_attribute_string('layout-wrap'),
-              elespare_kses_basic($settings['trending_title'])
+              $settings['trending_title']
             );
           endif;
           $count = 1;

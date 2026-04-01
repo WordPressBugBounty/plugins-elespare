@@ -772,14 +772,14 @@ class PostFlash extends Widget_Base
           <?php
 
           if ($all_posts->have_posts()) : ?>
-            <div <?php $this->print_render_attribute_string('marquee'); ?>>
+            <div <?php $this->print_render_attribute_string('marquee'); ?> role="list">
               <?php
 
               while ($all_posts->have_posts()) : $all_posts->the_post(); ?>
                 <h4 class="elespare-post-title">
                   <a href="<?php the_permalink(); ?>">
 
-                    <?php if (has_post_thumbnail() || $settings['show_number'] == 'yes') { ?>
+                    <?php if (has_post_thumbnail() || $settings['show_number'] === 'yes') { ?>
 
                       <span class="elespare-circle-marq">
                         <?php if ('yes' == $settings['show_number']) { ?>

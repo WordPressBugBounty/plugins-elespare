@@ -772,7 +772,7 @@ class PostList extends Widget_Base
           ],
 
         ],
-        'selector' => '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap .elespare-posts-list-post-items h4 a > span',
+        'selector' => '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap .elespare-posts-list-post-items h3 a > span',
       ]
     );
 
@@ -806,11 +806,11 @@ class PostList extends Widget_Base
           ],
 
         ],
-        'selector' => '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-5 .elespare-posts-list-post-items:first-child h4 a > span,
-                {{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-6 .elespare-posts-list-post-items:first-child h4 a > span,
-                {{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-7 .elespare-posts-list-post-items:first-child h4 a > span,
-                {{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-8 .elespare-posts-list-post-items:first-child h4 a > span,
-                {{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-9 .elespare-posts-list-post-items:first-child h4 a > span',
+        'selector' => '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-5 .elespare-posts-list-post-items:first-child h3 a > span,
+                {{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-6 .elespare-posts-list-post-items:first-child h3 a > span,
+                {{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-7 .elespare-posts-list-post-items:first-child h3 a > span,
+                {{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-8 .elespare-posts-list-post-items:first-child h3 a > span,
+                {{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-9 .elespare-posts-list-post-items:first-child h3 a > span',
 
         'condition' => [
           'layout_posts_style' => ['list-style-5', 'list-style-6', 'list-style-7', 'list-style-8', 'list-style-9']
@@ -842,7 +842,7 @@ class PostList extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => [
-          '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap .elespare-posts-list-post-items h4 a > span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap .elespare-posts-list-post-items h3 a > span'       => 'color: {{VALUE}};',
         ],
         'condition' => [
           'dark_mode!' => 'yes'
@@ -859,7 +859,7 @@ class PostList extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => [
-          '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap .elespare-posts-list-post-items h4 a > span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap .elespare-posts-list-post-items h3 a > span'       => 'color: {{VALUE}};',
         ],
         'condition' => [
           'dark_mode' => 'yes'
@@ -877,11 +877,11 @@ class PostList extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => [
-          '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-5 .elespare-posts-list-post-items:first-child h4 a > span'       => 'color: {{VALUE}};',
-          '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-6 .elespare-posts-list-post-items:first-child h4 a > span'       => 'color: {{VALUE}};',
-          '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-7 .elespare-posts-list-post-items:first-child h4 a > span'       => 'color: {{VALUE}};',
-          '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-8 .elespare-posts-list-post-items:first-child h4 a > span'       => 'color: {{VALUE}};',
-          '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-9 .elespare-posts-list-post-items:first-child h4 a > span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-5 .elespare-posts-list-post-items:first-child h3 a > span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-6 .elespare-posts-list-post-items:first-child h3 a > span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-7 .elespare-posts-list-post-items:first-child h3 a > span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-8 .elespare-posts-list-post-items:first-child h3 a > span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap.list-style-9 .elespare-posts-list-post-items:first-child h3 a > span'       => 'color: {{VALUE}};',
 
         ],
         'condition' => [
@@ -911,7 +911,7 @@ class PostList extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => array(
-          '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap .elespare-posts-list-post-items h4  > a:hover span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap .elespare-posts-list-post-items h3  > a:hover span'       => 'color: {{VALUE}};',
         ),
       )
     );
@@ -926,7 +926,7 @@ class PostList extends Widget_Base
         'type'       => Controls_Manager::DIMENSIONS,
         'size_units' => ['px'],
         'selectors'  => [
-          '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap .elespare-posts-list-post-items h4' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+          '{{WRAPPER}} .elespare-list-wrap .elespare-posts-wrap .elespare-posts-list-post-items h3' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
         ],
       ]
     );
@@ -1319,10 +1319,10 @@ class PostList extends Widget_Base
 
 
     if ($settings['title']) :
-      printf(
-        '<div %1$s><h4 class="elespare-widget-title"><span class="elespare-section-title-before"></span><span class="elespare-section-title">%2$s </span><span class="elespare-section-title-after"></span></h4></div>',
+
+      elespare_section_title(
         $this->get_render_attribute_string('layout-wrap'),
-        elespare_kses_basic($settings['title'])
+        $settings['title']
       );
     endif;
 

@@ -906,7 +906,8 @@ class NavigationHorizontalMenu extends Widget_Base
         <div <?php $this->print_render_attribute_string('elespare-moblie-ham-menu'); ?>>
           <?php if ($layout_option == 'drawer') { ?>
             <a href="#"
-              class="elespare--close-menu-side-bar <?php echo esc_attr($settings['dropdown_close_icon']['value']) ?>"></a>
+              class="elespare--close-menu-side-bar <?php echo esc_attr($settings['dropdown_close_icon']['value']) ?>"
+              aria-label="<?php echo esc_attr('Close menu', 'elespare'); ?>"></a>
           <?php } ?>
           <div class="elespare-menu-sidebar--wrapper">
 
@@ -925,7 +926,9 @@ class NavigationHorizontalMenu extends Widget_Base
               } elseif (is_user_logged_in()) {
               ?>
                 <a class="add-menu"
-                  href="<?php echo esc_url(get_admin_url() . 'nav-menus.php'); ?>"><?php esc_html_e('Add a Primary Menu', 'elespare'); ?></a>
+                  href="<?php echo esc_url(get_admin_url() . 'nav-menus.php'); ?>"
+                  aria-label="<?php echo esc_attr('Add a Primary Menu', 'elespare'); ?>">
+                  <?php esc_html_e('Add a Primary Menu', 'elespare'); ?></a>
               <?php } ?>
             </nav>
           </div>

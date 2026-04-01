@@ -1,21 +1,20 @@
 <?php
 
 /**
- * EleSpare - News, Magazine and Blog Addons for Elementor
+ * EleSpare - Elementor Addons for News, Magazine & Blog Sites | 500+ Drag & Drop Templates, Header & Footer Builder, Post Grids, Sliders, Carousels, Lists, Tiles & More
  *
  * @package Elespare
  *
- * Plugin Name: EleSpare - News, Magazine and Blog Addons for Elementor
- * Description: EleSpare provides pre-designed templates, header/footer builders, and various post layouts for creating stunning news, magazine, and blog sites with Elementor.
-
+ * Plugin Name: Elespare - Ultimate Blog Addons for Elementor
+ * Description: Easy Post Grids, Sliders, Templates, Header/Footer Builder, and Starter Site Imports
  * Plugin URI:  https://elespare.com/
- * Version:     3.3.10
- * Elementor tested up to:  3.33.4
- * Elementor Pro tested up to:  3.33.4
+ * Version:     4.0.0
+ * Elementor tested up to:  4.0.0
+ * Elementor Pro tested up to:  4.0.0
  * Author:      Elespare
  * Author URI:  https://elespare.com/
  * Text Domain: elespare
- * EleSpare provides pre-designed templates, header/footer builders, and various post layouts for creating stunning news, magazine, and blog sites with Elementor.
+ * Build Your Blog, News & Magazine Websites with Expert-Designed Template Kits. One Click Import: No Coding Skills Required!
  */
 
 if (!defined('ABSPATH')) {
@@ -23,7 +22,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-defined('ELESPARE_VERSION') or define('ELESPARE_VERSION', '3.3.10');
+defined('ELESPARE_VERSION') or define('ELESPARE_VERSION', '4.0.0');
 defined('ELESPARE') or define('ELESPARE', __FILE__);
 defined('ELESPARE_PLUGIN_BASE') or define('ELESPARE_PLUGIN_BASE', plugin_basename(ELESPARE));
 defined('ELESPARE_DIR_PATH') or define('ELESPARE_DIR_PATH', plugin_dir_path(ELESPARE));
@@ -53,7 +52,7 @@ final class Elespare
      * @since 1.0.0
      * @var string The plugin version.
      */
-    const VERSION = '3.3.7';
+    const VERSION = '3.3.2';
 
     /**
      * Minimum Elementor Version

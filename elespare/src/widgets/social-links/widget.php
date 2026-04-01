@@ -527,13 +527,12 @@ class SocialLinks extends Widget_Base
 
 
 ?>
-    <div class="elespare-widget-social-link-wrapper">
+    <div class="elespare-widget-social-link-wrapper" role="navigation" aria-label="Social media links">
       <?php
       if ($settings['_social_menu_widget_title']) :
-        printf(
-          '<div %1$s><h4 class="elespare-widget-title"><span class="elespare-section-title-before"></span><span class="elespare-section-title">%2$s </span><span class="elespare-section-title-after"></span></h4></div>',
+        elespare_section_title(
           $this->get_render_attribute_string('layout-wrap'),
-          elespare_kses_basic($settings['_social_menu_widget_title'])
+          $settings['_social_menu_widget_title']
         );
       endif;
       ?>
@@ -555,11 +554,12 @@ class SocialLinks extends Widget_Base
               }
 
               printf(
-                '<a target="_blank" rel="noopener" href="%1$s" class="elementor-repeater-item-%2$s %4$s"><i class="demo-icon elespare-icons-%3$s" aria-hidden="true"></i><span class="elespare-social-item-name">%3$s</span></a>',
+                '<a target="_blank" rel="noopener" href="%1$s" class="elementor-repeater-item-%2$s %4$s"><i class="demo-icon elespare-icons-%3$s" aria-hidden="true"></i><span class="elespare-social-item-name">%3$s</span><span class="screen-reader-text"> %5$s</span></a>',
                 esc_url($url),
                 esc_attr($profile['_id']),
                 esc_attr($icon),
-                'es-' . esc_html($icon)
+                'es-' . esc_html($icon),
+                __('opens in a new window', 'elespare')
 
               );
             endforeach; ?>

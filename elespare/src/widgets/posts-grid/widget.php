@@ -915,7 +915,7 @@ class PostGrid extends Widget_Base
           ],
 
         ],
-        'selector' => '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap .elespare-posts-grid-post-items h4 a > span',
+        'selector' => '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap .elespare-posts-grid-post-items h3 a > span',
       ]
     );
 
@@ -940,7 +940,7 @@ class PostGrid extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => [
-          '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap.elespare-light .elespare-posts-grid-post-items h4 a >span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap.elespare-light .elespare-posts-grid-post-items h3 a >span'       => 'color: {{VALUE}};',
         ],
         'condition' => [
           'layout_posts_style!' => ['grid-style-8', 'grid-style-9', 'grid-style-10'],
@@ -960,7 +960,7 @@ class PostGrid extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => [
-          '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap.elespare-dark .elespare-posts-grid-post-items h4 a >span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap.elespare-dark .elespare-posts-grid-post-items h3 a >span'       => 'color: {{VALUE}};',
         ],
         'condition' => [
           'layout_posts_style!' => ['grid-style-8', 'grid-style-9', 'grid-style-10'],
@@ -980,9 +980,9 @@ class PostGrid extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => [
-          '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap.elespare-light.grid-style-8 .elespare-posts-grid-post-items h4 a >span'       => 'color: {{VALUE}};',
-          '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap.elespare-light.grid-style-9 .elespare-posts-grid-post-items h4 a >span'       => 'color: {{VALUE}};',
-          '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap.elespare-light.grid-style-10 .elespare-posts-grid-post-items h4 a >span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap.elespare-light.grid-style-8 .elespare-posts-grid-post-items h3 a >span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap.elespare-light.grid-style-9 .elespare-posts-grid-post-items h3 a >span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap.elespare-light.grid-style-10 .elespare-posts-grid-post-items h3 a >span'       => 'color: {{VALUE}};',
         ],
         'condition' => [
           'layout_posts_style' => ['grid-style-8', 'grid-style-9', 'grid-style-10']
@@ -1012,10 +1012,10 @@ class PostGrid extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => array(
-          '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap .elespare-posts-grid-post-items h4  > a:hover span'       => 'color: {{VALUE}};',
-          '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap.grid-style-8 .elespare-posts-grid-post-items h4  > a:hover span'       => 'color: {{VALUE}};',
-          '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap.grid-style-9 .elespare-posts-grid-post-items h4  > a:hover span'       => 'color: {{VALUE}};',
-          '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap.grid-style-10 .elespare-posts-grid-post-items h4  > a:hover span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap .elespare-posts-grid-post-items h3  > a:hover span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap.grid-style-8 .elespare-posts-grid-post-items h3  > a:hover span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap.grid-style-9 .elespare-posts-grid-post-items h3  > a:hover span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-grid-wrap .elespare-posts-wrap.grid-style-10 .elespare-posts-grid-post-items h3  > a:hover span'       => 'color: {{VALUE}};',
         ),
       )
     );
@@ -1623,10 +1623,10 @@ class PostGrid extends Widget_Base
 
 
     if ($settings['title']) :
-      printf(
-        '<div %1$s><h4 class="elespare-widget-title"><span class="elespare-section-title-before"></span><span class="elespare-section-title">%2$s </span><span class="elespare-section-title-after"></span></h4></div>',
+
+      elespare_section_title(
         $this->get_render_attribute_string('layout-wrap'),
-        elespare_kses_basic($settings['title'])
+        $settings['title']
       );
     endif;
 

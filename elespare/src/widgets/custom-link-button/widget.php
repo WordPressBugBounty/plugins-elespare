@@ -518,7 +518,7 @@ class CustomLinkButton extends Widget_Base
 
 ?>
     <div class='elespare-custom-link-button <?php echo esc_attr($settings['custom_button_layout_style']) ?> <?php echo esc_attr($settings['border_radius']) ?> <?php echo esc_attr($settings['custom_button_hover_style']) ?>  <?php echo esc_attr('elespare-icon-position-' . $settings['icon_position']) ?> '>
-      <a <?php $this->print_render_attribute_string('button'); ?> class=>
+      <a <?php $this->print_render_attribute_string('button'); ?>>
         <?php $this->render_text(); ?>
       </a>
     </div>

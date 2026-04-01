@@ -913,14 +913,14 @@ class PostExpressList extends Widget_Base
           ],
 
         ],
-        'selector' => '{{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-1 .elespare-posts-express-post-items:nth-child(1) h4 a > span,
-                {{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-2 .elespare-posts-express-post-items:nth-child(1) h4 a > span,
-                {{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-2 .elespare-posts-express-post-items:nth-child(2) h4 a > span,
-                {{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-3 .elespare-posts-express-post-items:nth-child(1) h4 a > span,
-                {{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-4 .elespare-posts-express-post-items:nth-child(1) h4 a > span,
-                {{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-4 .elespare-posts-express-post-items:nth-child(2) h4 a > span,
-                {{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-5 .elespare-posts-express-post-items:nth-child(1) h4 a > span,
-                {{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-6 .elespare-posts-express-post-items:nth-child(1) h4 a > span',
+        'selector' => '{{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-1 .elespare-posts-express-post-items:nth-child(1) h3 a > span,
+                {{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-2 .elespare-posts-express-post-items:nth-child(1) h3 a > span,
+                {{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-2 .elespare-posts-express-post-items:nth-child(2) h3 a > span,
+                {{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-3 .elespare-posts-express-post-items:nth-child(1) h3 a > span,
+                {{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-4 .elespare-posts-express-post-items:nth-child(1) h3 a > span,
+                {{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-4 .elespare-posts-express-post-items:nth-child(2) h3 a > span,
+                {{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-5 .elespare-posts-express-post-items:nth-child(1) h3 a > span,
+                {{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-6 .elespare-posts-express-post-items:nth-child(1) h3 a > span',
       ]
     );
     $this->add_control(
@@ -933,9 +933,9 @@ class PostExpressList extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => [
-          '{{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-3 .elespare-posts-express-post-items:first-child h4 a > span' => 'color: {{VALUE}};',
-          '{{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-4 .elespare-posts-express-post-items:nth-child(1) h4 a > span' => 'color: {{VALUE}};',
-          '{{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-4 .elespare-posts-express-post-items:nth-child(2) h4 a > span' => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-3 .elespare-posts-express-post-items:first-child h3 a > span' => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-4 .elespare-posts-express-post-items:nth-child(1) h3 a > span' => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap.express-style-4 .elespare-posts-express-post-items:nth-child(2) h3 a > span' => 'color: {{VALUE}};',
         ],
         'condition' => [
           'layout_posts_style' => ['express-style-3', 'express-style-4']
@@ -985,7 +985,7 @@ class PostExpressList extends Widget_Base
           ],
 
         ],
-        'selector' => '{{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap .elespare-posts-express-post-items h4 a > span',
+        'selector' => '{{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap .elespare-posts-express-post-items h3 a > span',
       ]
     );
 
@@ -1010,7 +1010,7 @@ class PostExpressList extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => [
-          '{{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap .elespare-posts-express-post-items h4 a > span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap .elespare-posts-express-post-items h3 a > span'       => 'color: {{VALUE}};',
         ],
         'condition' => [
           'dark_mode!' => 'yes'
@@ -1027,7 +1027,7 @@ class PostExpressList extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => [
-          '{{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap .elespare-posts-express-post-items h4 a > span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap .elespare-posts-express-post-items h3 a > span'       => 'color: {{VALUE}};',
         ],
         'condition' => [
           'dark_mode' => 'yes'
@@ -1057,7 +1057,7 @@ class PostExpressList extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => array(
-          '{{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap .elespare-posts-express-post-items h4  > a:hover span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap .elespare-posts-express-post-items h3  > a:hover span'       => 'color: {{VALUE}};',
         ),
       )
     );
@@ -1072,7 +1072,7 @@ class PostExpressList extends Widget_Base
         'type'       => Controls_Manager::DIMENSIONS,
         'size_units' => ['px'],
         'selectors'  => [
-          '{{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap .elespare-posts-express-post-items h4 ' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+          '{{WRAPPER}} .elespare-express-list-wrap .elespare-posts-wrap .elespare-posts-express-post-items h3 ' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
         ],
       ]
     );
@@ -1674,10 +1674,10 @@ class PostExpressList extends Widget_Base
 
 
     if ($settings['title']) :
-      printf(
-        '<div %1$s><h4 class="elespare-widget-title"><span class="elespare-section-title-before"></span><span class="elespare-section-title">%2$s </span><span class="elespare-section-title-after"></span></h4></div>',
+
+      elespare_section_title(
         $this->get_render_attribute_string('layout-wrap'),
-        elespare_kses_basic($settings['title'])
+        $settings['title']
       );
     endif;
 
@@ -1712,7 +1712,7 @@ class PostExpressList extends Widget_Base
                 }
                 if ($layouts == 'express-style-2' || $layouts == 'express-style-4') {
                   if ($count <= 2) {
-                    $image_size = $settings['post_list_thumbnail_size'];
+                    $image_size = 'medium';
                   }
                 }
                 elespare_posts_grid_render_thumbnail($image_size);

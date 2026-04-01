@@ -235,10 +235,10 @@ class SectionTitle extends Widget_Base
     $this->add_inline_editing_attributes('title', 'basic');
 
     if ($settings['title']) :
-      printf(
-        '<div %1$s><h4 class="elespare-widget-title"><span class="elespare-section-title-before"></span><span class="elespare-section-title">%2$s </span><span class="elespare-section-title-after"></span></h4></div>',
+
+      elespare_section_title(
         $this->get_render_attribute_string('layout-wrap'),
-        elespare_kses_basic($settings['title'])
+        $settings['title']
       );
     endif;
   }

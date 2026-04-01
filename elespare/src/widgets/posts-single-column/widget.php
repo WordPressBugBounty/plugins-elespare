@@ -854,7 +854,7 @@ class PostSingleColumn extends Widget_Base
           ],
 
         ],
-        'selector' => '{{WRAPPER}} .elespare-single-list-wrap .elespare-posts-wrap .elespare-posts-single-list-post-items h4 a > span',
+        'selector' => '{{WRAPPER}} .elespare-single-list-wrap .elespare-posts-wrap .elespare-posts-single-list-post-items h3 a > span',
       ]
     );
 
@@ -879,7 +879,7 @@ class PostSingleColumn extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => [
-          '{{WRAPPER}} .elespare-single-list-wrap .elespare-posts-wrap.elespare-light .elespare-posts-single-list-post-items h4 a > span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-single-list-wrap .elespare-posts-wrap.elespare-light .elespare-posts-single-list-post-items h3 a > span'       => 'color: {{VALUE}};',
         ],
         'condition' => [
           'dark_mode!' => 'yes'
@@ -897,7 +897,7 @@ class PostSingleColumn extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => [
-          '{{WRAPPER}} .elespare-single-list-wrap .elespare-posts-wrap.elespare-dark .elespare-posts-single-list-post-items h4 a > span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-single-list-wrap .elespare-posts-wrap.elespare-dark .elespare-posts-single-list-post-items h3 a > span'       => 'color: {{VALUE}};',
         ],
         'condition' => [
           'dark_mode' => 'yes'
@@ -926,7 +926,7 @@ class PostSingleColumn extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => array(
-          '{{WRAPPER}} .elespare-single-list-wrap .elespare-posts-wrap .elespare-posts-single-list-post-items h4  > a:hover span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-single-list-wrap .elespare-posts-wrap .elespare-posts-single-list-post-items h3  > a:hover span'       => 'color: {{VALUE}};',
         ),
       )
     );
@@ -941,7 +941,7 @@ class PostSingleColumn extends Widget_Base
         'type'       => Controls_Manager::DIMENSIONS,
         'size_units' => ['px'],
         'selectors'  => [
-          '{{WRAPPER}} .elespare-single-list-wrap .elespare-posts-wrap .elespare-posts-single-list-post-items h4' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+          '{{WRAPPER}} .elespare-single-list-wrap .elespare-posts-wrap .elespare-posts-single-list-post-items h3' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
         ],
       ]
     );
@@ -1446,10 +1446,10 @@ class PostSingleColumn extends Widget_Base
     }
 
     if ($settings['title']) :
-      printf(
-        '<div %1$s><h4 class="elespare-widget-title"><span class="elespare-section-title-before"></span><span class="elespare-section-title">%2$s </span><span class="elespare-section-title-after"></span></h4></div>',
+
+      elespare_section_title(
         $this->get_render_attribute_string('layout-wrap'),
-        elespare_kses_basic($settings['title'])
+        $settings['title']
       );
     endif;
 

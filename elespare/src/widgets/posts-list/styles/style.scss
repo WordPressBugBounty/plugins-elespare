@@ -9,8 +9,7 @@
       align-items: center;
       min-height: 120px;
       .elespare-img-wrapper{
-        // height: 123px;
-        // min-height: 123px;
+       
         max-width: 123px;
         width: 45%;
         position: relative;
@@ -498,7 +497,7 @@
 }
 
 // responsive
-@container (max-width: 768px){
+@container (max-width: 1050px){
   .elespare-list-wrap{
     .elespare-posts-wrap{
       display: grid;

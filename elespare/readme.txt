@@ -1,12 +1,12 @@
-﻿=== EleSpare — News, Magazine and Blog Addons for Elementor ===
+﻿=== EleSpare - News, Magazine and Blog Addons for Elementor ===
 Author URI: https://elespare.com/
 Plugin URI: https://elespare.com/
 Contributors: elespare, afthemes
-Tags: blog, news, Magazine, post carousel, post grid
+Tags: elementor, elementor post grid, elementor templates, elementor addons, widgets for elementor, elementor widgets, theme builder, header footer builder, addons for elementor
 Donate link: https://www.elespare.com/pricing/
 Tested up to: 6.9
 Requires PHP: 5.3
-Stable tag: 3.3.10
+Stable tag: 4.0.0
 License: GPLv3 or later
 License URI: https://opensource.org/licenses/GPL-3.0 GPL-3.0-only
 
@@ -187,6 +187,36 @@ Whenever you need to add spaces in your post content, Gaps Settings helps you ac
 It's well-designed to help the website rank higher in search engines, and users will receive excellent support from the staff if they encounter any issues while using it. Let’s Start Designing Your Dream Site in Minutes with [EleSpare](https://elespare.com/)!
 [Home](https://elespare.com/) | [Elements](https://elespare.com/layout/) | [Homepages](https://elespare.com/all-demos/) | [Docs](https://elespare.com/docs/) | [Support](https://afthemes.com/supports/) | [Premium](https://elespare.com/)
 
+
+**Recommended Themes**
+
+EleSpare works with all modern WordPress themes and has been tested with:
+
+✔ [CoverNews](https://wordpress.org/themes/covernews/) 
+✔ [ChromeNews](https://wordpress.org/themes/chromenews/) 
+✔ [MoreNews](https://wordpress.org/themes/morenews/)
+✔ [ReviewNews](https://wordpress.org/themes/reviewnews/) 
+✔ [Newsphere](https://wordpress.org/themes/newsphere/) 
+✔ Twenty Twenty-Five
+✔ Astra
+✔ Ocean WP
+✔ Blocksy
+✔ Kadence
+✔ Generatepress
+✔ Neve
+✔ [And all themes from AF Themes](https://wordpress.org/themes/author/afthemes/) 
+
+## Other Plugins by AF themes
+
+If you find EleSpare useful, you may also like:
+
+[**TemplateSpare:**](https://wordpress.org/plugins/templatespare/) 1000+ starter templates and full site import/export solution.
+
+[**BlockSpare:**](https://wordpress.org/plugins/blockspare/) News, magazine, and blog addons for Gutenberg (Block Editor).
+
+[**WP Post Author:**](https://wordpress.org/plugins/wp-post-author/) Author box, co-authors, and guest author management.
+
+
 ---
 
 == Frequently Asked Questions ==
@@ -254,6 +284,22 @@ Yes, you can explore all of the demos on the [EleSpare Website](https://elespare
 ---
 
 == Changelog ==
+
+= 4.0.0 =
+* Accessibility Improvements across menus, social links, search, and banners
+* Added aria-label support for menus, categories, site logo, and UI elements
+* Improved semantic HTML structure (header and content sections)
+* Enhanced SEO compatibility
+* Updated heading structure (H4 to H3) for better hierarchy and accessibility
+* Improved contrast for social (Twitter) background
+* Fixed social link accessibility issues
+* Updated Slick Slider from 1.8.0 to 1.8.1
+* Fixed preg_replace() null parameter warning
+* Fixed CSS issues (line-height naming, removed unnecessary !important)
+* Cleaned up unused/empty classes
+* Standardized section title structure
+* Updated text domain to `elespare-pro` for translation readiness
+
 = 3.3.7 =
 * Readme Improvements
 

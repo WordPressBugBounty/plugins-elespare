@@ -443,7 +443,11 @@ class Site_Search extends Widget_Base
         // phpcs:ignore
       ?>
         <div class="elespare-search-dropdown-toggle  <?php echo esc_attr($align_class); ?>">
-          <button class="elespare-search-icon--toggle <?php echo esc_attr($icon['value']); ?>">
+          <button class="elespare-search-icon--toggle <?php echo esc_attr($icon['value']); ?>"
+            type="button"
+            class="elespare-search-icon--toggle <?php echo $icon['value']; ?>"
+            aria-label="<?php echo esc_attr__('Open search', 'elespare'); ?>"
+            aria-expanded="false">
             <span class="screen-reader-text"><?php echo esc_html__('Enter Keyword', 'elespare'); ?></span>
           </button>
           <div class="elespare-search--toggle-dropdown">

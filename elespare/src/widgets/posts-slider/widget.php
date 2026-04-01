@@ -966,7 +966,7 @@ class PostSlider extends Widget_Base
           ],
 
         ],
-        'selector' => '{{WRAPPER}} .elespare-slider-wrap .elespare-posts-wrap .elespare-posts-slider-post-items h4 a >span',
+        'selector' => '{{WRAPPER}} .elespare-slider-wrap .elespare-posts-wrap .elespare-posts-slider-post-items h3 a >span',
       ]
     );
 
@@ -991,7 +991,7 @@ class PostSlider extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => [
-          '{{WRAPPER}} .elespare-slider-wrap .elespare-posts-wrap .elespare-posts-slider-post-items h4 a >span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-slider-wrap .elespare-posts-wrap .elespare-posts-slider-post-items h3 a >span'       => 'color: {{VALUE}};',
         ],
         'condition' => [
           'dark_mode!' => 'yes',
@@ -1009,7 +1009,7 @@ class PostSlider extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => [
-          '{{WRAPPER}} .elespare-slider-wrap .elespare-posts-wrap.elespare-dark .elespare-posts-slider-post-items h4 a >span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-slider-wrap .elespare-posts-wrap.elespare-dark .elespare-posts-slider-post-items h3 a >span'       => 'color: {{VALUE}};',
         ],
         'condition' => [
           'layout_posts_style!' => ['slider-style-1'],
@@ -1028,7 +1028,7 @@ class PostSlider extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => [
-          '{{WRAPPER}} .elespare-slider-wrap .elespare-posts-wrap.slider-style-1 .elespare-posts-slider-post-items h4 a >span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-slider-wrap .elespare-posts-wrap.slider-style-1 .elespare-posts-slider-post-items h3 a >span'       => 'color: {{VALUE}};',
         ],
         'condition' => [
           'layout_posts_style' => ['slider-style-1'],
@@ -1057,7 +1057,7 @@ class PostSlider extends Widget_Base
           'default' => \Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY,
         ],
         'selectors' => array(
-          '{{WRAPPER}} .elespare-slider-wrap .elespare-posts-wrap .elespare-posts-slider-post-items h4  > a:hover span'       => 'color: {{VALUE}};',
+          '{{WRAPPER}} .elespare-slider-wrap .elespare-posts-wrap .elespare-posts-slider-post-items h3 > a:hover span'       => 'color: {{VALUE}};',
         ),
       )
     );
@@ -1072,7 +1072,7 @@ class PostSlider extends Widget_Base
         'type'       => Controls_Manager::DIMENSIONS,
         'size_units' => ['px'],
         'selectors'  => [
-          '{{WRAPPER}} .elespare-slider-wrap .elespare-posts-wrap .elespare-posts-slider-post-items h4' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+          '{{WRAPPER}} .elespare-slider-wrap .elespare-posts-wrap .elespare-posts-slider-post-items h3' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
         ],
       ]
     );
@@ -1753,10 +1753,10 @@ class PostSlider extends Widget_Base
     }
 
     if ($settings['title']) :
-      printf(
-        '<div %1$s><h4 class="elespare-widget-title"><span class="elespare-section-title-before"></span><span class="elespare-section-title">%2$s </span><span class="elespare-section-title-after"></span></h4></div>',
+
+      elespare_section_title(
         $this->get_render_attribute_string('layout-wrap'),
-        elespare_kses_basic($settings['title'])
+        $settings['title']
       );
     endif;
 

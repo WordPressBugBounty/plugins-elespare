@@ -370,7 +370,8 @@ class SiteLogo extends Widget_Base
     <div <?php echo esc_attr($this->get_render_attribute_string('elespare-wrapper')); ?>>
 
       <?php if ($link) :   ?>
-        <a class='<?php echo  esc_attr($class); ?>' href="<?php echo esc_url($link) ?>">
+        <a class='<?php echo  esc_attr($class); ?>' href="<?php echo esc_url($link) ?>"
+          aria-label="<?php echo esc_attr__('Website logo', 'elespare'); ?>">
         <?php endif;
 
       if (empty($site_image)) {
