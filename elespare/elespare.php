@@ -8,9 +8,9 @@
  * Plugin Name: Elespare - Ultimate Blog Addons for Elementor
  * Description: Easy Post Grids, Sliders, Templates, Header/Footer Builder, and Starter Site Imports
  * Plugin URI:  https://elespare.com/
- * Version:     4.1.1
- * Elementor tested up to:  4.2.3
- * Elementor Pro tested up to:  4.2.3
+ * Version:     4.1.2
+ * Elementor tested up to:  4.3.5
+ * Elementor Pro tested up to:  4.3.5
  * Author:      Elespare
  * Author URI:  https://elespare.com/
  * Text Domain: elespare

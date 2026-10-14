@@ -6,7 +6,7 @@ Tags: elementor, elementor post grid, elementor templates, elementor addons, wid
 Donate link: https://www.elespare.com/pricing/
 Tested up to: 7.1
 Requires PHP: 5.3
-Stable tag: 4.1.1
+Stable tag: 4.1.2
 License: GPLv3 or later
 License URI: https://opensource.org/licenses/GPL-3.0 GPL-3.0-only
 
