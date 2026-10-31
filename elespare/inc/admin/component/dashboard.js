@@ -88,7 +88,7 @@ const Dashboard = () => {
 
                     </div>
                     <div className="ele-upgrade">
-                        <a href="https://elespare.com/pricing/" target="_blank">{__('Upgrade', 'elspare')}</a>
+                        <a href="https://afthemes.com/plugins/elespare/pricing/" target="_blank">{__('Upgrade', 'elspare')}</a>
                     </div>
                 </div>
                 <div className="ele-templates-demo-lists-body">

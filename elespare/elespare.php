@@ -7,12 +7,12 @@
  *
  * Plugin Name: Elespare - Ultimate Blog Addons for Elementor
  * Description: Easy Post Grids, Sliders, Templates, Header/Footer Builder, and Starter Site Imports
- * Plugin URI:  https://elespare.com/
- * Version:     4.1.2
+ * Plugin URI:  https://afthemes.com/plugins/elespare/
+ * Version:     4.1.3
  * Elementor tested up to:  4.3.5
  * Elementor Pro tested up to:  4.3.5
  * Author:      Elespare
- * Author URI:  https://elespare.com/
+ * Author URI:  https://afthemes.com/plugins/elespare/
  * Text Domain: elespare
  * Build Your Blog, News & Magazine Websites with Expert-Designed Template Kits. One Click Import: No Coding Skills Required!
  */
@@ -162,11 +162,11 @@ final class Elespare
 
     public function plugin_action_links($links)
     {
-        // $settings_link = sprintf('<a href="%1$s">%2$s</a>', 'https://elespare.com/layout-page/', esc_html__('Demos', 'elespare'));
+        // $settings_link = sprintf('<a href="%1$s">%2$s</a>', 'https://afthemes.com/plugins/elespare/layout-page/', esc_html__('Demos', 'elespare'));
 
         // array_unshift($links, $settings_link);
 
-        $links['espro'] = sprintf('<a href="%1$s" target="_blank" class="elespare-pro-link">%2$s</a>', 'https://elespare.com/pricing/', esc_html__('Template Kits', 'elespare'));
+        $links['espro'] = sprintf('<a href="%1$s" target="_blank" class="elespare-pro-link">%2$s</a>', 'https://afthemes.com/plugins/elespare/pricing/', esc_html__('Template Kits', 'elespare'));
 
         return $links;
     }
@@ -174,9 +174,9 @@ final class Elespare
     {
         if (ELESPARE_PLUGIN_BASE === $plugin_file) {
             $row_meta = [
-                'templates' => '<a href="https://elespare.com/layout-page/" aria-label="' . esc_attr(esc_html__('View Elespare Template Kits', 'elespare')) . '" target="_blank">' . esc_html__('Template Kits', 'elespare') . '</a>',
-                'widgets' => '<a href="https://elespare.com/layout-page/" aria-label="' . esc_attr(esc_html__('View Elespare Widgets', 'elespare')) . '" target="_blank">' . esc_html__('Widgets', 'elespare') . '</a>',
-                'docs' => '<a href="https://elespare.com/elespare-docs/" aria-label="' . esc_attr(esc_html__('View Elespare Documentation', 'elespare')) . '" target="_blank">' . esc_html__('Docs', 'elespare') . '</a>',
+                'templates' => '<a href="https://afthemes.com/plugins/elespare/layout-page/" aria-label="' . esc_attr(esc_html__('View Elespare Template Kits', 'elespare')) . '" target="_blank">' . esc_html__('Template Kits', 'elespare') . '</a>',
+                'widgets' => '<a href="https://afthemes.com/plugins/elespare/layout-page/" aria-label="' . esc_attr(esc_html__('View Elespare Widgets', 'elespare')) . '" target="_blank">' . esc_html__('Widgets', 'elespare') . '</a>',
+                'docs' => '<a href="https://afthemes.com/plugins/elespare/elespare-docs/" aria-label="' . esc_attr(esc_html__('View Elespare Documentation', 'elespare')) . '" target="_blank">' . esc_html__('Docs', 'elespare') . '</a>',
                 'video' => '<a href="https://afthemes.com/all-themes-plan/" aria-label="' . esc_attr(esc_html__('Access All Themes and Plugins', 'elespare')) . '" target="_blank">' . esc_html__('All Themes Plan', 'elespare') . '</a>',
                 'support' => '<a href="https://afthemes.com/supports/" aria-label="' . esc_attr(esc_html__('Need help for Elespare?', 'elespare')) . '" target="_blank">' . esc_html__('Support', 'elespare') . '</a>',
 
@@ -217,8 +217,8 @@ final class Elespare
             '<p>',
             '</p>',
             '<a class="button-primary" href="' . esc_url($notice_url) . '">' . $notice_title . '</a>',
-            '<a class="button-secondary" target="_blank" href="' . esc_url('https://elespare.com/') . '">' . $view_demos . '</a>',
-            '<a class="button-secondary" target="_blank" href="' . esc_url('https://elespare.com/elespare-docs/') . '">' . $docs_support . '</a>',
+            '<a class="button-secondary" target="_blank" href="' . esc_url('https://afthemes.com/plugins/elespare/') . '">' . $view_demos . '</a>',
+            '<a class="button-secondary" target="_blank" href="' . esc_url('https://afthemes.com/plugins/elespare/elespare-docs/') . '">' . $docs_support . '</a>',
             '<a class="button-secondary" target="_blank" href="' . esc_url('http://afthemes.com/supports/') . '">' . $contact_support . '</a>'
 
         );

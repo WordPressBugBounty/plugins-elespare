@@ -1,12 +1,12 @@
 ﻿=== EleSpare - News, Magazine and Blog Addons for Elementor ===
-Author URI: https://elespare.com/
-Plugin URI: https://elespare.com/
+Author URI: https://afthemes.com/plugins/elespare/
+Plugin URI: https://afthemes.com/plugins/elespare/
 Contributors: elespare, afthemes
 Tags: elementor, elementor post grid, elementor templates, elementor addons, widgets for elementor, elementor widgets, theme builder, header footer builder, addons for elementor
 Donate link: https://www.elespare.com/pricing/
 Tested up to: 7.1
 Requires PHP: 5.3
-Stable tag: 4.1.2
+Stable tag: 4.1.3
 License: GPLv3 or later
 License URI: https://opensource.org/licenses/GPL-3.0 GPL-3.0-only
 
@@ -14,15 +14,15 @@ EleSpare provides pre-designed templates, header/footer builders, and various po
 
 == Description ==
 ## Easy Post Grids, Sliders, Templates, Header/Footer Builder, and Starter Site Imports.
-Transform your website effortlessly with [EleSpare](https://elespare.com/): Craft impressive [Blog](https://afthemes.com/plugins/elespare/fashion/), [News](https://demos.afthemes.com/covernews/elenews/), or [Magazine](https://demos.afthemes.com/covernews/elenews/home-3/) sites using Elementor. No coding skills needed, just [one-click import](https://www.youtube.com/watch?v=8Jq53Pywmk0) for highly customizable templates. Showcase your posts in various stunning formats – [banners, grids, lists, carousels, sliders, and more](https://elespare.com/layout-page/) – for FREE!
+Transform your website effortlessly with [EleSpare](https://afthemes.com/plugins/elespare/): Craft impressive [Blog](https://afthemes.com/plugins/elespare/fashion/), [News](https://demos.afthemes.com/covernews/elenews/), or [Magazine](https://demos.afthemes.com/covernews/elenews/home-3/) sites using Elementor. No coding skills needed, just [one-click import](https://www.youtube.com/watch?v=8Jq53Pywmk0) for highly customizable templates. Showcase your posts in various stunning formats – [banners, grids, lists, carousels, sliders, and more](https://afthemes.com/plugins/elespare/layout-page/) – for FREE!
 [youtube https://www.youtube.com/watch?v=8Jq53Pywmk0]
 
-[Try Live Demo](https://tastewp.com/new/?pre-installed-plugin-slug=elespare) | [Explore More](https://elespare.com/) | [Themes](https://afthemes.com/) | [Demo](https://elespare.com/all-demos/) | [Template Kits](https://elespare.com/layout-page/) | [Docs](https://elespare.com/docs/) | [Support](https://afthemes.com/supports/) | [Upgrade](https://elespare.com/pricing/)
+[Try Live Demo](https://tastewp.com/new/?pre-installed-plugin-slug=elespare) | [Explore More](https://afthemes.com/plugins/elespare/) | [Themes](https://afthemes.com/) | [Demo](https://afthemes.com/plugins/elespare/all-demos/) | [Template Kits](https://afthemes.com/plugins/elespare/layout-page/) | [Docs](https://afthemes.com/plugins/elespare/docs/) | [Support](https://afthemes.com/supports/) | [Upgrade](https://afthemes.com/plugins/elespare/pricing/)
 
 ---
 
 ## Eliminate Coding Hassles
-Are you tired of struggling with complex code to build a stunning website from scratch? Look no further! EleSpare is your solution for effortlessly creating eye-catching designs without any coding expertise. Our user-friendly website [template library](https://elespare.com/all-demos/) is designed specifically for non-coders, offering you a seamless experience from start to finish.
+Are you tired of struggling with complex code to build a stunning website from scratch? Look no further! EleSpare is your solution for effortlessly creating eye-catching designs without any coding expertise. Our user-friendly website [template library](https://afthemes.com/plugins/elespare/all-demos/) is designed specifically for non-coders, offering you a seamless experience from start to finish.
 [youtube https://youtu.be/elLCTqnQMI0?t=1488]
 
 ---
@@ -81,46 +81,46 @@ Discover the perfect template kit for your website and bring your vision to life
 Unleash your creativity and let EleSpare redefine your WordPress experience. Your stunning website is just a few clicks away!
 
 
-**[Explore More](https://elespare.com/)**
+**[Explore More](https://afthemes.com/plugins/elespare/)**
 
 ---
 
 ## Envision Amazing Layouts with EleSpare
-* [POST FLASH (TICKER)](https://elespare.com/layout/post-flash/)
+* [POST FLASH (TICKER)](https://afthemes.com/plugins/elespare/layout/post-flash/)
     The news ticker area, which comes with many style options, will assist you in presenting your flash posts.
-* [HERO BANNER 1](https://elespare.com/layout/post-banner/)
+* [HERO BANNER 1](https://afthemes.com/plugins/elespare/layout/post-banner/)
     The three-columned hero widget, featuring a posts slider, posts grid, and posts list combo, will allow you to present your blog entries in a banner format.
-* [HERO BANNER 2](https://elespare.com/layout/post-banner-2/)
+* [HERO BANNER 2](https://afthemes.com/plugins/elespare/layout/post-banner-2/)
     The two-columned tiled hero widget, with a posts slider and posts grid combo, will allow you to present your blog entries in a banner format.
-* [EXPRESS LIST](https://elespare.com/layout/express-posts-list/)
+* [EXPRESS LIST](https://afthemes.com/plugins/elespare/layout/express-posts-list/)
     The grid and list designs of the combo widget will help you present your articles in a stylish manner.
-* [EXPRESS GRID](https://elespare.com/layout/express-posts-grid/)
+* [EXPRESS GRID](https://afthemes.com/plugins/elespare/layout/express-posts-grid/)
     The big and small grid combo widget designs will help you in showing your blog entries in a fashionable style.
-* [TABBED GRID](https://elespare.com/layout/post-tabbed/)
+* [TABBED GRID](https://afthemes.com/plugins/elespare/layout/post-tabbed/)
     The posts grid widget designs will help you in showing your blog entries in multiple tabs.
-* [POST GRID](https://elespare.com/layout/posts-grid/)
+* [POST GRID](https://afthemes.com/plugins/elespare/layout/posts-grid/)
     The grid widget box will assist you in presenting your blog content in multiple columns.
-* [POST TILE](https://elespare.com/layout/posts-tile/)
+* [POST TILE](https://afthemes.com/plugins/elespare/layout/posts-tile/)
     The tiled grid widget box will assist you in presenting your blog content in multiple columns as well as collages.
-* [POST CAROUSEL](https://elespare.com/layout/post-carousel/)
+* [POST CAROUSEL](https://afthemes.com/plugins/elespare/layout/post-carousel/)
     The carousel, which comes with a plethora of different options, will assist you in looping the blog content.
-* [POST MASONRY](https://elespare.com/layout/post-masonry/)
+* [POST MASONRY](https://afthemes.com/plugins/elespare/layout/post-masonry/)
     You can sort posts archive using a masonry of articles with a range of options available.
-* [POST LIST](https://elespare.com/layout/posts-list/)
+* [POST LIST](https://afthemes.com/plugins/elespare/layout/posts-list/)
     You can sort the posts collection using a list of articles with a number of appearance options.
-* [POST TRENDING](https://elespare.com/layout/post-trending-carousel/)
+* [POST TRENDING](https://afthemes.com/plugins/elespare/layout/post-trending-carousel/)
     You can organize the archived posts using a carousel list of articles with a multitude of displaying possibilities.
-* [POST SINGLE COLUMN](https://elespare.com/layout/posts-single-column/)
+* [POST SINGLE COLUMN](https://afthemes.com/plugins/elespare/layout/posts-single-column/)
     The widget, which comes with a range of style options, allows you to display your blog entries in a single column.
-* [POST SLIDER](https://elespare.com/layout/post-slider/)
+* [POST SLIDER](https://afthemes.com/plugins/elespare/layout/post-slider/)
     You can loop posts archive using a slider widget of posts with a range of layout variations.
-* [POST TIMELINE](https://elespare.com/layout/posts-timeline/)
+* [POST TIMELINE](https://afthemes.com/plugins/elespare/layout/posts-timeline/)
     The timeline designs widget will assist you in displaying your blog entries in a specific format.
-* [POST FULL](https://elespare.com/layout/posts-full/)
+* [POST FULL](https://afthemes.com/plugins/elespare/layout/posts-full/)
     The full widget will enable you in showing your blog posts in sections by providing different choices.
-* [POST AUTHOR](https://elespare.com/layout/author/)
+* [POST AUTHOR](https://afthemes.com/plugins/elespare/layout/author/)
     The bio widget comes with a variety of layout options and can assist you in displaying author information.
-* [SOCIAL LINK](https://elespare.com/layout/author/)
+* [SOCIAL LINK](https://afthemes.com/plugins/elespare/layout/author/)
     You can add a link to your social page from a range of social media and layout options.
 
 ---
@@ -142,12 +142,12 @@ The plugin comes with built-in widgets that aid in the creation of header and fo
 * **Expanded Navigation Menu** - Provides you with a list of menus that have already been generated for your website. All you have to do now is select the required one and display it with the expand/collapse style. You may even set unique icons to open and close the menu, among many other choices.
 * **Search** - Create a search form with a variety of layout and stylistic possibilities for your website.
 
-[See Homepage Templates with EleSpare Header/Footer](https://elespare.com/all-demos/)
+[See Homepage Templates with EleSpare Header/Footer](https://afthemes.com/plugins/elespare/all-demos/)
 
 ---
 
 ## Build with Advanced Options and Controls
-The [Elementor addon](https://elespare.com/) is appropriate for news, journal, magazine, publishing, or review websites, as well as blogging. Our plugin includes 25 and counting carefully constructed Elementor widgets (Free/Pro). With its design, controls, and features, this widgets collection offers a comprehensive solution.
+The [Elementor addon](https://afthemes.com/plugins/elespare/) is appropriate for news, journal, magazine, publishing, or review websites, as well as blogging. Our plugin includes 25 and counting carefully constructed Elementor widgets (Free/Pro). With its design, controls, and features, this widgets collection offers a comprehensive solution.
 
 = Layout Options =
 Display your content effectively with our layout options. Each layout has distinct looks that can enhance your page/post section.
@@ -184,8 +184,8 @@ Whenever you need to add spaces in your post content, Gaps Settings helps you ac
 * **Highly customizable layouts**
 * **Dedicated support**
 
-It's well-designed to help the website rank higher in search engines, and users will receive excellent support from the staff if they encounter any issues while using it. Let’s Start Designing Your Dream Site in Minutes with [EleSpare](https://elespare.com/)!
-[Home](https://elespare.com/) | [Elements](https://elespare.com/layout/) | [Homepages](https://elespare.com/all-demos/) | [Docs](https://elespare.com/docs/) | [Support](https://afthemes.com/supports/) | [Premium](https://elespare.com/)
+It's well-designed to help the website rank higher in search engines, and users will receive excellent support from the staff if they encounter any issues while using it. Let’s Start Designing Your Dream Site in Minutes with [EleSpare](https://afthemes.com/plugins/elespare/)!
+[Home](https://afthemes.com/plugins/elespare/) | [Elements](https://afthemes.com/plugins/elespare/layout/) | [Homepages](https://afthemes.com/plugins/elespare/all-demos/) | [Docs](https://afthemes.com/plugins/elespare/docs/) | [Support](https://afthemes.com/supports/) | [Premium](https://afthemes.com/plugins/elespare/)
 
 
 **Recommended Themes**
@@ -223,7 +223,7 @@ If you find EleSpare useful, you may also like:
 
 **Is EleSpare free?**
 
-Yes, EleSpare is a free plugin for building news, magazine, and blog websites with WordPress. For more advanced controls, you can explore [EleSpare Pro](https://elespare.com/).
+Yes, EleSpare is a free plugin for building news, magazine, and blog websites with WordPress. For more advanced controls, you can explore [EleSpare Pro](https://afthemes.com/plugins/elespare/).
 
 **Do I need to code?**
 
@@ -255,7 +255,7 @@ No. The structure of the package and clean code keep it lightweight and efficien
 
 **Can I explore EleSpare's demos?**
 
-Yes, you can explore all of the demos on the [EleSpare Website](https://elespare.com/).
+Yes, you can explore all of the demos on the [EleSpare Website](https://afthemes.com/plugins/elespare/).
 
 ---
 

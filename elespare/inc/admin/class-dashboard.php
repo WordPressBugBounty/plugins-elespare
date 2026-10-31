@@ -84,7 +84,7 @@ if(!class_exists('Elespare_General_Dashboard')){
                                 ?>
                             </div>
                             <div class="elespare-all-blocks-button">
-                                <a href="https://elespare.com/pricing/" class="elespare-button" target="_blank"
+                                <a href="https://afthemes.com/plugins/elespare/pricing/" class="elespare-button" target="_blank"
                                                                           title="<?php esc_attr_e('Unlock All Templates', 'elespare') ?>"><?php esc_attr_e('Unlock All Templates', 'elespare') ?></a>
                             </div>
                         </article>
@@ -107,7 +107,7 @@ if(!class_exists('Elespare_General_Dashboard')){
                                     foreach ($elespare_blocks as $block):
                                         $blocks_name = $block['name'];
                                         $icon_url = plugins_url("svg/" .$block['slug'] . ".svg", __FILE__);
-                                        $demo_url = 'https://elespare.com/layout/'.$block['slug'];
+                                        $demo_url = 'https://afthemes.com/plugins/elespare/layout/'.$block['slug'];
 
                                         ?>
                                         <a class="elespare-explore-btn" href="<?php echo esc_url($demo_url) ?>" target="_blank">
@@ -130,7 +130,7 @@ if(!class_exists('Elespare_General_Dashboard')){
                                 ?>
                             </div>
                             <div class="elespare-all-blocks-button">
-                                <a href="https://elespare.com/" class="elespare-button" target="_blank"
+                                <a href="https://afthemes.com/plugins/elespare/" class="elespare-button" target="_blank"
                                                                           title="<?php esc_attr_e('Explore All Widgets', 'elespare') ?>"><?php esc_attr_e('Explore All Widgets', 'elespare') ?></a>
                             </div>
                         </article>
@@ -199,7 +199,7 @@ if(!class_exists('Elespare_General_Dashboard')){
                                     </ul>
                                     </p>
                                     <p>
-                                        <a href="<?php echo esc_url('https://elespare.com/'); ?>" class="elespare-button"
+                                        <a href="<?php echo esc_url('https://afthemes.com/plugins/elespare/'); ?>" class="elespare-button"
                                            title="<?php esc_attr_e('All Features Available with Elespare Pro', 'elespare') ?>"><?php esc_attr_e('All Features Available with Elespare Pro', 'elespare') ?></a>
                                     </p>
 
@@ -218,13 +218,13 @@ if(!class_exists('Elespare_General_Dashboard')){
                                 <ul class="elespare-list elespare-knowledge-base">
                                     <li>
                                         <strong class="elespare-sub-headings">
-                                            <a href="https://elespare.com/docs/"><?php esc_html_e('Documentations', 'elespare') ?> →</a>
+                                            <a href="https://afthemes.com/plugins/elespare/docs/"><?php esc_html_e('Documentations', 'elespare') ?> →</a>
                                         </strong>
                                         <p><?php esc_html_e('Do you have any difficulties regarding plugin setup and uses? Please visit Documentations page.', 'elespare') ?></p>
                                     </li>
                                     <li>
                                         <strong class="elespare-sub-headings">
-                                            <a href="https://elespare.com/"><?php esc_html_e('Demos', 'elespare') ?> →</a>
+                                            <a href="https://afthemes.com/plugins/elespare/"><?php esc_html_e('Demos', 'elespare') ?> →</a>
                                         </strong>
                                         <p><?php esc_html_e('We have also designed and displayed multiple type of layouts with Elespare. For more details please visit our site.', 'elespare') ?></p>
                                     </li>

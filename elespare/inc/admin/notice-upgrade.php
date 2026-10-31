@@ -15,7 +15,7 @@ class Elespare_Notice {
         $this->type = $type;
         $this->dismiss_url = $dismiss_url;
         $this->temporary_dismiss_url = $temporary_dismiss_url;
-        $this->pricing_url = 'https://elespare.com/pricing/';
+        $this->pricing_url = 'https://afthemes.com/plugins/elespare/pricing/';
         $this->current_user_id = get_current_user_id();
 
         // Conditionally show notice on relevant admin pages.
@@ -102,7 +102,7 @@ class Elespare_Notice {
                 ),
                 '<h2>Hello ' . esc_html($current_user->display_name) . ', you are awesome for using Elespare!</h2>',
                 '<p class="notice-text"><strong>Elespare</strong>',
-                '<strong><a target="_blank" href="https://elespare.com/pricing/">Elespare Pro</a></strong>',
+                '<strong><a target="_blank" href="https://afthemes.com/plugins/elespare/pricing/">Elespare Pro</a></strong>',
                 '<strong><a href="https://wordpress.org/support/plugin/elespare/reviews/?filter=5#new-post" target="_blank">',
                 '</a></strong>',
                 '<br>',

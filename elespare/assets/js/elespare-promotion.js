@@ -15,7 +15,7 @@
 							var button = document.createElement("a");
 							var buttonText = document.createTextNode("Explore More Features");
 
-							button.setAttribute("href", "https://elespare.com/");
+							button.setAttribute("href", "https://afthemes.com/plugins/elespare/");
 							button.setAttribute("target", "_blank");
 							button.classList.add(
 								"dialog-button",

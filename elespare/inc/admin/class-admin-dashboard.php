@@ -102,7 +102,7 @@ SVG;
                     __( 'Upgrade', 'elespare' ), // Page title.
                     __( "<span class='dashicons dashicons-star-filled' style='font-size: 17px'></span> Upgrade Pro ", 'elespare' ), // Menu title.
                     'manage_options', // Capability.
-                    esc_url('https://elespare.com/') // Callback function.
+                    esc_url('https://afthemes.com/plugins/elespare/') // Callback function.
 
                 );
             }

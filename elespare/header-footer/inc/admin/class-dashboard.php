@@ -169,13 +169,13 @@ if(!class_exists('Elespare_General_Dashboard')){
                                 <ul class="elespare-list elespare-knowledge-base">
                                     <li>
                                         <strong class="elespare-sub-headings">
-                                            <a href="https://elespare.com/elespare-docs/"><?php esc_html_e('Documentations', 'elespare') ?> →</a>
+                                            <a href="https://afthemes.com/plugins/elespare/elespare-docs/"><?php esc_html_e('Documentations', 'elespare') ?> →</a>
                                         </strong>
                                         <p><?php esc_html_e('Do you have any difficulties regarding plugin setup and uses? Please visit Documentations page.', 'elespare') ?></p>
                                     </li>
                                     <li>
                                         <strong class="elespare-sub-headings">
-                                            <a href="https://elespare.com/all-demos/"><?php esc_html_e('Demos', 'elespare') ?> →</a>
+                                            <a href="https://afthemes.com/plugins/elespare/all-demos/"><?php esc_html_e('Demos', 'elespare') ?> →</a>
                                         </strong>
                                         <p><?php esc_html_e('We have also designed and displayed multiple type of layouts with Elespare. For more details please visit our site.', 'elespare') ?></p>
                                     </li>

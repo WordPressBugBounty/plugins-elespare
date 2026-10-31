@@ -105,7 +105,7 @@ const Content = ({ demosData, blocks, navState }) => {
 
 
                                                 {isProExists === true &&
-                                                    <a href={"https://elespare.com/pricing/"} target="_blank" className="elespare-immport-btn">
+                                                    <a href={"https://afthemes.com/plugins/elespare/pricing/"} target="_blank" className="elespare-immport-btn">
                                                         <span className="dashicons dashicons-superhero-alt">{__('Upgrade', 'elespare')}</span>
                                                     </a>
 
@@ -136,7 +136,7 @@ const Content = ({ demosData, blocks, navState }) => {
                                                     </a>
                                                 ) : ""}
                                                 {isProExists === true &&
-                                                    <a href={"https://elespare.com/pricing/"} target="_blank" className="elespare-immport-btn">
+                                                    <a href={"https://afthemes.com/plugins/elespare/pricing/"} target="_blank" className="elespare-immport-btn">
                                                         <span className="dashicons dashicons-superhero-alt">{__('Upgrade', 'elespare')}</span>
                                                     </a>
                                                 }
@@ -166,7 +166,7 @@ const Content = ({ demosData, blocks, navState }) => {
 
                                                 ) : ""}
                                                 {isProExists === true &&
-                                                    <a href={"https://elespare.com/pricing/"} target="_blank" className="elespare-immport-btn">
+                                                    <a href={"https://afthemes.com/plugins/elespare/pricing/"} target="_blank" className="elespare-immport-btn">
                                                         <span className="dashicons dashicons-superhero-alt">{__('Upgrade', 'elespare')}</span>
                                                     </a>
                                                 }
@@ -224,7 +224,7 @@ const Content = ({ demosData, blocks, navState }) => {
                                             </a>
                                         ) : ""}
                                         {isProExists === true &&
-                                            <a href={"https://elespare.com/pricing/"} target="_blank" className="elespare-immport-btn">
+                                            <a href={"https://afthemes.com/plugins/elespare/pricing/"} target="_blank" className="elespare-immport-btn">
                                                 <span className="dashicons dashicons-superhero-alt">{__('Upgrade', 'elespare')}</span>
                                             </a>
                                         }

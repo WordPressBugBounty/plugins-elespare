@@ -21,7 +21,7 @@
                   <a href="">
                     <img src="${ELELibrary.logo}" alt=""?>
                   </a>
-                  <a class="elespare-theme-title" href="https://elespare.com" target="_blank">${name}</a>
+                  <a class="elespare-theme-title" href="https://afthemes.com/plugins/elespare" target="_blank">${name}</a>
                 </div>
                 <div class="responsive-view">
                   <span class="active desktop"><i class="dashicons dashicons-desktop"></i></span>
@@ -29,7 +29,7 @@
                   <span class="mobile"><i class="dashicons dashicons-smartphone"></i></span>
                 </div>
                 <div class="elespare-upgrade">
-                <a href="https://elespare.com/pricing/" target="_blank" class="ele-upgrade">Upgrade</a>
+                <a href="https://afthemes.com/plugins/elespare/pricing/" target="_blank" class="ele-upgrade">Upgrade</a>
                   <a class="elespare-close-iframe"><i class="dashicons dashicons-no-alt"></i></a>
                   </div>
               </div>
