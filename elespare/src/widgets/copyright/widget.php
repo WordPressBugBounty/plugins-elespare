@@ -39,6 +39,10 @@ class Copyright extends Widget_Base
   {
     return ['elespare'];
   }
+  public function get_style_depends()
+  {
+    return ['elespare-copyright'];
+  }
 
   protected function register_controls()
   {

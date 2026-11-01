@@ -8,7 +8,7 @@
  * Plugin Name: Elespare - Ultimate Blog Addons for Elementor
  * Description: Easy Post Grids, Sliders, Templates, Header/Footer Builder, and Starter Site Imports
  * Plugin URI:  https://afthemes.com/plugins/elespare/
- * Version:     4.1.3
+ * Version:     4.2.0
  * Elementor tested up to:  4.3.5
  * Elementor Pro tested up to:  4.3.5
  * Author:      Elespare
@@ -18,8 +18,8 @@
  */
 
 if (!defined('ABSPATH')) {
-    // Exit if accessed directly.
-    exit;
+  // Exit if accessed directly.
+  exit;
 }
 
 defined('ELESPARE_VERSION') or define('ELESPARE_VERSION', '4.0.0');
@@ -46,297 +46,347 @@ require_once ELESPARE_DIR_PATH . '/freemius.php';
 final class Elespare
 {
 
-    /**
-     * Plugin Version
-     *
-     * @since 1.0.0
-     * @var string The plugin version.
-     */
-    const VERSION = '3.3.2';
+  /**
+   * Plugin Version
+   *
+   * @since 1.0.0
+   * @var string The plugin version.
+   */
+  const VERSION = '3.3.2';
 
-    /**
-     * Minimum Elementor Version
-     *
-     * @since 1.0.0
-     * @var string Minimum Elementor version required to run the plugin.
-     */
-    const MINIMUM_ELEMENTOR_VERSION = '2.8.0';
+  /**
+   * Minimum Elementor Version
+   *
+   * @since 1.0.0
+   * @var string Minimum Elementor version required to run the plugin.
+   */
+  const MINIMUM_ELEMENTOR_VERSION = '2.8.0';
 
-    /**
-     * Minimum PHP Version
-     *
-     * @since 1.0.0
-     * @var string Minimum PHP version required to run the plugin.
-     */
-    const MINIMUM_PHP_VERSION = '5.4';
+  /**
+   * Minimum PHP Version
+   *
+   * @since 1.0.0
+   * @var string Minimum PHP version required to run the plugin.
+   */
+  const MINIMUM_PHP_VERSION = '5.4';
 
-    /**
-     * Constructor
-     *
-     * @since 1.0.0
-     * @access public
-     */
-    public function __construct()
-    {
-        // Load the translation.
-        add_action('init', array($this, 'i18n'));
+  /**
+   * Constructor
+   *
+   * @since 1.0.0
+   * @access public
+   */
+  public function __construct()
+  {
+    // Load the translation.
+    add_action('init', array($this, 'i18n'));
 
-        // Initialize the plugin.
-        add_action('plugins_loaded', array($this, 'init'));
+    // Initialize the plugin.
+    add_action('plugins_loaded', array($this, 'init'));
 
-        // Register widget style
-        add_action('elementor/frontend/after_enqueue_styles', [$this, 'ElespareWidgetStyle']);
+    // Register widget style
+    add_action('elementor/frontend/after_enqueue_styles', [$this, 'ElespareWidgetStyle']);
 
-        add_action('elementor/elements/categories_registered', [$this, 'register_widget_category']);
+    add_action('elementor/elements/categories_registered', [$this, 'register_widget_category']);
 
-        add_action('activated_plugin', [$this, 'elespare_activation_redirect']);
+    add_action('activated_plugin', [$this, 'elespare_activation_redirect']);
 
-        add_filter('plugin_row_meta', [$this, 'plugin_row_meta'], 10, 2);
+    add_filter('plugin_row_meta', [$this, 'plugin_row_meta'], 10, 2);
 
-        add_filter('plugin_action_links_' . ELESPARE_PLUGIN_BASE, [$this, 'plugin_action_links']);
+    add_filter('plugin_action_links_' . ELESPARE_PLUGIN_BASE, [$this, 'plugin_action_links']);
+  }
+
+  public function ElespareWidgetStyle()
+  {
+    // wp_register_style('elespare-posts-grid', plugins_url('dist/elespare.style.build.min.css', ELESPARE), array(), self::VERSION);
+    // wp_enqueue_style('elespare-posts-grid');
+
+    wp_register_style('elespare-common-style', plugins_url('dist/common-styles.css', ELESPARE), array(), self::VERSION);
+    wp_enqueue_style('elespare-common-style');
+
+    $styles = [
+      'posts_express_list'  => 'posts-express-list.css',
+      'posts_grid'          => 'posts-grid.css',
+      'posts_list'          => 'posts-list.css',
+      'posts_single_column' => 'posts-single-column.css',
+      'posts_tile'          => 'posts-tile.css',
+      'posts_slider'        => 'posts-slider.css',
+      'posts_flash'         => 'posts-flash.css',
+      'posts_banner_1'      => 'posts-banner-1.css',
+      'author'              => 'author.css',
+      'social_links'        => 'social-links.css',
+      'search_form'         => 'search-form.css',
+      'nav_menu_horizontal' => 'nav-menu-horizontal.css',
+      'section_title'       => 'section-title.css',
+      'popular_tags'        => 'popular-tags.css',
+      'date_time'           => 'date-time.css',
+      'custom_link_button'  => 'custom-link-button.css',
+      'copyright'           => 'copyright.css',
+      'site_title'          => 'site-title.css',
+      'main_banner_1'       => 'main-banner-1.css',
+    ];
+
+    foreach ($styles as $handle => $file) {
+
+      wp_register_style(
+        'elespare-' . $handle,
+        ELESPARE_DIR_URL . 'dist/' . $file,
+        [],
+        self::VERSION
+      );
+    }
+  }
+
+  /**
+   * Load Textdomain
+   *
+   * Load plugin localization files.
+   * Fired by `init` action hook.
+   *
+   * @since 1.0.0
+   * @access public
+   */
+  public function i18n()
+  {
+    load_plugin_textdomain('elespare');
+  }
+
+  /**
+   * Initialize the plugin
+   *
+   * Validates that Elementor is already loaded.
+   * Checks for basic plugin requirements, if one check fail don't continue,
+   * if all check have passed include the plugin class.
+   *
+   * Fired by `plugins_loaded` action hook.
+   *
+   * @since 1.0.0
+   * @access public
+   */
+  public function init()
+  {
+
+    add_action('elementor/editor/before_enqueue_scripts', [$this, 'editor_enqueue']);
+
+    include_once ELESPARE_DIR_PATH . 'inc/admin/class-admin-dashboard.php';
+
+    // Check if Elementor installed and activated.
+    if (!did_action('elementor/loaded')) {
+      add_action('admin_notices', array($this, 'admin_notice_missing_main_plugin'));
+      return;
     }
 
-    public function ElespareWidgetStyle()
-    {
-        wp_register_style('elespare-posts-grid', plugins_url('dist/elespare.style.build.min.css', ELESPARE), array(), self::VERSION);
-        wp_enqueue_style('elespare-posts-grid');
+    // Check for required Elementor version.
+    if (!version_compare(ELEMENTOR_VERSION, self::MINIMUM_ELEMENTOR_VERSION, '>=')) {
+      add_action('admin_notices', array($this, 'admin_notice_minimum_elementor_version'));
+      return;
     }
 
-    /**
-     * Load Textdomain
-     *
-     * Load plugin localization files.
-     * Fired by `init` action hook.
-     *
-     * @since 1.0.0
-     * @access public
-     */
-    public function i18n()
-    {
-        load_plugin_textdomain('elespare');
+    // Check for required PHP version.
+    if (version_compare(PHP_VERSION, self::MINIMUM_PHP_VERSION, '<')) {
+      add_action('admin_notices', array($this, 'admin_notice_minimum_php_version'));
+      return;
     }
 
-    /**
-     * Initialize the plugin
-     *
-     * Validates that Elementor is already loaded.
-     * Checks for basic plugin requirements, if one check fail don't continue,
-     * if all check have passed include the plugin class.
-     *
-     * Fired by `plugins_loaded` action hook.
-     *
-     * @since 1.0.0
-     * @access public
-     */
-    public function init()
-    {
+    // Once we get here, We have passed all validation checks so we can safely include our widgets.
+    require_once 'class-elespare.php';
+    include_once ELESPARE_DIR_PATH . 'header-footer/init.php';
+    require ELESPARE_DIR_PATH . 'inc/functions.php';
+    require ELESPARE_DIR_PATH . 'inc/init.php';
+  }
 
-        add_action('elementor/editor/before_enqueue_scripts', [$this, 'editor_enqueue']);
+  public function plugin_action_links($links)
+  {
+    // $settings_link = sprintf('<a href="%1$s">%2$s</a>', 'https://afthemes.com/plugins/elespare/layout-page/', esc_html__('Demos', 'elespare'));
 
-        include_once ELESPARE_DIR_PATH . 'inc/admin/class-admin-dashboard.php';
+    // array_unshift($links, $settings_link);
 
-        // Check if Elementor installed and activated.
-        if (!did_action('elementor/loaded')) {
-            add_action('admin_notices', array($this, 'admin_notice_missing_main_plugin'));
-            return;
-        }
+    $links['espro'] = sprintf('<a href="%1$s" target="_blank" class="elespare-pro-link">%2$s</a>', esc_url( admin_url( 'admin.php?page=elespare_dashboard-pricing' ) ), esc_html__('Template Kits', 'elespare'));
 
-        // Check for required Elementor version.
-        if (!version_compare(ELEMENTOR_VERSION, self::MINIMUM_ELEMENTOR_VERSION, '>=')) {
-            add_action('admin_notices', array($this, 'admin_notice_minimum_elementor_version'));
-            return;
-        }
+    return $links;
+  }
+  public function plugin_row_meta($plugin_meta, $plugin_file)
+  {
+    if (ELESPARE_PLUGIN_BASE === $plugin_file) {
+      $row_meta = [
+        'templates' => '<a href="https://afthemes.com/plugins/elespare/layout-page/" aria-label="' . esc_attr(esc_html__('View Elespare Template Kits', 'elespare')) . '" target="_blank">' . esc_html__('Template Kits', 'elespare') . '</a>',
+        'widgets' => '<a href="https://afthemes.com/plugins/elespare/layout-page/" aria-label="' . esc_attr(esc_html__('View Elespare Widgets', 'elespare')) . '" target="_blank">' . esc_html__('Widgets', 'elespare') . '</a>',
+        'docs' => '<a href="https://afthemes.com/plugins/elespare/elespare-docs/" aria-label="' . esc_attr(esc_html__('View Elespare Documentation', 'elespare')) . '" target="_blank">' . esc_html__('Docs', 'elespare') . '</a>',
+        'video' => '<a href="https://afthemes.com/all-themes-plan/" aria-label="' . esc_attr(esc_html__('Access All Themes and Plugins', 'elespare')) . '" target="_blank">' . esc_html__('All Themes Plan', 'elespare') . '</a>',
+        'support' => '<a href="https://afthemes.com/supports/" aria-label="' . esc_attr(esc_html__('Need help for Elespare?', 'elespare')) . '" target="_blank">' . esc_html__('Support', 'elespare') . '</a>',
 
-        // Check for required PHP version.
-        if (version_compare(PHP_VERSION, self::MINIMUM_PHP_VERSION, '<')) {
-            add_action('admin_notices', array($this, 'admin_notice_minimum_php_version'));
-            return;
-        }
+      ];
 
-        // Once we get here, We have passed all validation checks so we can safely include our widgets.
-        require_once 'class-elespare.php';
-        include_once ELESPARE_DIR_PATH . 'header-footer/init.php';
-        require ELESPARE_DIR_PATH . 'inc/functions.php';
-        require ELESPARE_DIR_PATH . 'inc/init.php';
+      $plugin_meta = array_merge($plugin_meta, $row_meta);
     }
 
-    public function plugin_action_links($links)
-    {
-        // $settings_link = sprintf('<a href="%1$s">%2$s</a>', 'https://afthemes.com/plugins/elespare/layout-page/', esc_html__('Demos', 'elespare'));
+    return $plugin_meta;
+  }
 
-        // array_unshift($links, $settings_link);
-
-        $links['espro'] = sprintf('<a href="%1$s" target="_blank" class="elespare-pro-link">%2$s</a>', 'https://afthemes.com/plugins/elespare/pricing/', esc_html__('Template Kits', 'elespare'));
-
-        return $links;
-    }
-    public function plugin_row_meta($plugin_meta, $plugin_file)
-    {
-        if (ELESPARE_PLUGIN_BASE === $plugin_file) {
-            $row_meta = [
-                'templates' => '<a href="https://afthemes.com/plugins/elespare/layout-page/" aria-label="' . esc_attr(esc_html__('View Elespare Template Kits', 'elespare')) . '" target="_blank">' . esc_html__('Template Kits', 'elespare') . '</a>',
-                'widgets' => '<a href="https://afthemes.com/plugins/elespare/layout-page/" aria-label="' . esc_attr(esc_html__('View Elespare Widgets', 'elespare')) . '" target="_blank">' . esc_html__('Widgets', 'elespare') . '</a>',
-                'docs' => '<a href="https://afthemes.com/plugins/elespare/elespare-docs/" aria-label="' . esc_attr(esc_html__('View Elespare Documentation', 'elespare')) . '" target="_blank">' . esc_html__('Docs', 'elespare') . '</a>',
-                'video' => '<a href="https://afthemes.com/all-themes-plan/" aria-label="' . esc_attr(esc_html__('Access All Themes and Plugins', 'elespare')) . '" target="_blank">' . esc_html__('All Themes Plan', 'elespare') . '</a>',
-                'support' => '<a href="https://afthemes.com/supports/" aria-label="' . esc_attr(esc_html__('Need help for Elespare?', 'elespare')) . '" target="_blank">' . esc_html__('Support', 'elespare') . '</a>',
-
-            ];
-
-            $plugin_meta = array_merge($plugin_meta, $row_meta);
-        }
-
-        return $plugin_meta;
+  /**
+   * Admin notice
+   *
+   * Warning when the site doesn't have Elementor installed or activated.
+   *
+   * @since 1.0.0
+   * @access public
+   */
+  public function admin_notice_missing_main_plugin()
+  {
+    $view_demos = __('View Demos', 'elespare');
+    $docs_support = __('Documentations', 'elespare');
+    $contact_support = __('Need Help?', 'elespare');
+    if (file_exists(WP_PLUGIN_DIR . '/elementor/elementor.php')) {
+      $notice_title = __('Activate Elementor', 'elespare');
+      $notice_url = wp_nonce_url('plugins.php?action=activate&plugin=elementor/elementor.php&plugin_status=all&paged=1', 'activate-plugin_elementor/elementor.php');
+    } else {
+      $notice_title = __('Install Elementor', 'elespare');
+      $notice_url = wp_nonce_url(self_admin_url('update.php?action=install-plugin&plugin=elementor'), 'install-plugin_elementor');
     }
 
-    /**
-     * Admin notice
-     *
-     * Warning when the site doesn't have Elementor installed or activated.
-     *
-     * @since 1.0.0
-     * @access public
-     */
-    public function admin_notice_missing_main_plugin()
-    {
-        $view_demos = __('View Demos', 'elespare');
-        $docs_support = __('Documentations', 'elespare');
-        $contact_support = __('Need Help?', 'elespare');
-        if (file_exists(WP_PLUGIN_DIR . '/elementor/elementor.php')) {
-            $notice_title = __('Activate Elementor', 'elespare');
-            $notice_url = wp_nonce_url('plugins.php?action=activate&plugin=elementor/elementor.php&plugin_status=all&paged=1', 'activate-plugin_elementor/elementor.php');
-        } else {
-            $notice_title = __('Install Elementor', 'elespare');
-            $notice_url = wp_nonce_url(self_admin_url('update.php?action=install-plugin&plugin=elementor'), 'install-plugin_elementor');
-        }
+    $messages = sprintf(
+      /* translators: 1: Plugin name 2: Elementor */
+      esc_html__('%3$s %1$s requires %2$s to be installed and activated to get the outstanding News,Magazine and Blog elements (widgets) and Header/Footer builder.%4$s %3$s %5$s %6$s %7$s %8$s %4$s', 'elespare'),
+      '<strong>' . esc_html__('Elespare', 'elespare') . '</strong>',
+      '<strong>' . esc_html__('Elementor', 'elespare') . '</strong>',
+      '<p>',
+      '</p>',
+      '<a class="button-primary" href="' . esc_url($notice_url) . '">' . $notice_title . '</a>',
+      '<a class="button-secondary" target="_blank" href="' . esc_url('https://afthemes.com/plugins/elespare/') . '">' . $view_demos . '</a>',
+      '<a class="button-secondary" target="_blank" href="' . esc_url('https://afthemes.com/plugins/elespare/elespare-docs/') . '">' . $docs_support . '</a>',
+      '<a class="button-secondary" target="_blank" href="' . esc_url('http://afthemes.com/supports/') . '">' . $contact_support . '</a>'
 
-        $messages = sprintf(
-            /* translators: 1: Plugin name 2: Elementor */
-            esc_html__('%3$s %1$s requires %2$s to be installed and activated to get the outstanding News,Magazine and Blog elements (widgets) and Header/Footer builder.%4$s %3$s %5$s %6$s %7$s %8$s %4$s', 'elespare'),
-            '<strong>' . esc_html__('Elespare', 'elespare') . '</strong>',
-            '<strong>' . esc_html__('Elementor', 'elespare') . '</strong>',
-            '<p>',
-            '</p>',
-            '<a class="button-primary" href="' . esc_url($notice_url) . '">' . $notice_title . '</a>',
-            '<a class="button-secondary" target="_blank" href="' . esc_url('https://afthemes.com/plugins/elespare/') . '">' . $view_demos . '</a>',
-            '<a class="button-secondary" target="_blank" href="' . esc_url('https://afthemes.com/plugins/elespare/elespare-docs/') . '">' . $docs_support . '</a>',
-            '<a class="button-secondary" target="_blank" href="' . esc_url('http://afthemes.com/supports/') . '">' . $contact_support . '</a>'
+    );
 
-        );
+    printf('<div class="notice notice-warning is-dismissible elespare-notice">%1$s</div>', $messages);
+  }
 
-        printf('<div class="notice notice-warning is-dismissible elespare-notice">%1$s</div>', $messages);
+  /**
+   * Admin notice
+   *
+   * Warning when the site doesn't have a minimum required Elementor version.
+   *
+   * @since 1.0.0
+   * @access public
+   */
+  public function admin_notice_minimum_elementor_version()
+  {
+
+    $ele_version = sprintf(
+      '<div class="notice notice-warning is-dismissible"><p><strong>"%1$s"</strong> requires <strong>"%2$s"</strong> version %3$s or greater.</p></div>',
+      'Elespare',
+      'Elementor',
+      self::MINIMUM_ELEMENTOR_VERSION
+    );
+
+    echo wp_kses($ele_version, array(
+      'div' => array(
+        'class' => array(),
+        'p' => array(),
+        'strong' => array(),
+      ),
+    ));
+  }
+
+  /**
+   * Admin notice
+   *
+   * Warning when the site doesn't have a minimum required PHP version.
+   *
+   * @since 1.0.0
+   * @access public
+   */
+  public function admin_notice_minimum_php_version()
+  {
+
+    $ele_php_version = sprintf(
+
+      '<div class="notice notice-warning is-dismissible"><p><strong>"%1$s"</strong> requires <strong>"%2$s"</strong> version %3$s or greater.</p></div>',
+      'Elespare',
+      'PHP',
+      self::MINIMUM_PHP_VERSION
+    );
+
+    echo wp_kses($ele_php_version, array(
+      'div' => array(
+        'class' => array(),
+        'p' => array(),
+        'strong' => array(),
+      ),
+    ));
+  }
+
+  public function register_widget_category($elements_manager)
+  {
+
+    $elements_manager->add_category(
+      'elespare',
+      [
+        'title' => esc_html__('Elespare', 'elespare'),
+        'icon' => 'fa fa-plug',
+      ]
+    );
+  }
+
+  public function editor_enqueue()
+  {
+    wp_enqueue_style(
+      'elespare-icons',
+      ELESPARE_DIR_URL . 'assets/font/elespare-icons.css',
+      array(),
+      ELESPARE_VERSION
+    );
+    //main_js.css
+    wp_enqueue_style(
+      'elespare-popup',
+      ELESPARE_DIR_URL . 'dist/main_js.css',
+      array(),
+      ELESPARE_VERSION
+    );
+
+
+    global $wp_query;
+    $id = $wp_query->post->ID;
+    wp_enqueue_script('elespare-elementor-modal', ELESPARE_DIR_URL . 'assets/js/elementor-modal.js', ['jquery'], ELESPARE_VERSION);
+
+    wp_enqueue_script(
+      'elespare-library-react',
+      ELESPARE_DIR_URL . 'dist/main_js.build.min.js',
+      [
+        'wp-editor',
+        'elespare-elementor-modal',
+      ],
+      ELESPARE_VERSION,
+      true
+    );
+    wp_enqueue_style(
+      'elespare-library-css',
+      ELESPARE_DIR_URL . 'dist/model_popup.css',
+      [],
+      ELESPARE_VERSION,
+      true
+    );
+
+    wp_localize_script('elespare-library-react', 'AFTLibrary', array(
+      'ajaxurl' => admin_url('admin-ajax.php'),
+      'baseUrl' => ELESPARE_DIR_URL,
+      'externalUrl' => 'https://raw.githubusercontent.com/afthemes/elespare-demo-data/master/free',
+      'apiUrl' => site_url() . '/index.php?rest_route=/',
+      'currentPage' => $id,
+      'key' => '',
+      'host' => $_SERVER['HTTP_HOST'],
+
+    ));
+  }
+
+  public function elespare_activation_redirect($plugin)
+  {
+    if ($plugin == plugin_basename(ELESPARE)) {
+      $redirect_url = esc_url_raw(add_query_arg(['page' => 'elespare_dashboard'], admin_url('admin.php')));
+      wp_safe_redirect($redirect_url);
+      exit;
     }
-
-    /**
-     * Admin notice
-     *
-     * Warning when the site doesn't have a minimum required Elementor version.
-     *
-     * @since 1.0.0
-     * @access public
-     */
-    public function admin_notice_minimum_elementor_version()
-    {
-
-        $ele_version = sprintf(
-            '<div class="notice notice-warning is-dismissible"><p><strong>"%1$s"</strong> requires <strong>"%2$s"</strong> version %3$s or greater.</p></div>',
-            'Elespare',
-            'Elementor',
-            self::MINIMUM_ELEMENTOR_VERSION
-        );
-
-        echo wp_kses($ele_version, array(
-            'div' => array(
-                'class' => array(),
-                'p' => array(),
-                'strong' => array(),
-            ),
-        ));
-    }
-
-    /**
-     * Admin notice
-     *
-     * Warning when the site doesn't have a minimum required PHP version.
-     *
-     * @since 1.0.0
-     * @access public
-     */
-    public function admin_notice_minimum_php_version()
-    {
-
-        $ele_php_version = sprintf(
-
-            '<div class="notice notice-warning is-dismissible"><p><strong>"%1$s"</strong> requires <strong>"%2$s"</strong> version %3$s or greater.</p></div>',
-            'Elespare',
-            'PHP',
-            self::MINIMUM_PHP_VERSION
-        );
-
-        echo wp_kses($ele_php_version, array(
-            'div' => array(
-                'class' => array(),
-                'p' => array(),
-                'strong' => array(),
-            ),
-        ));
-    }
-
-    public function register_widget_category($elements_manager)
-    {
-
-        $elements_manager->add_category(
-            'elespare',
-            [
-                'title' => esc_html__('Elespare', 'elespare'),
-                'icon' => 'fa fa-plug',
-            ]
-        );
-    }
-
-    public function editor_enqueue()
-    {
-        wp_enqueue_style(
-            'elespare-icons',
-            ELESPARE_DIR_URL . 'assets/font/elespare-icons.css',
-            array(),
-            ELESPARE_VERSION
-        );
-
-        global $wp_query;
-        $id = $wp_query->post->ID;
-        wp_enqueue_script('elespare-elementor-modal', ELESPARE_DIR_URL . 'assets/js/elementor-modal.js', ['jquery'], ELESPARE_VERSION);
-
-        wp_enqueue_script(
-            'elespare-library-react',
-            ELESPARE_DIR_URL . 'dist/main_js.build.min.js',
-            [
-                'wp-editor',
-                'elespare-elementor-modal',
-            ],
-            ELESPARE_VERSION,
-            true
-        );
-
-        wp_localize_script('elespare-library-react', 'AFTLibrary', array(
-            'ajaxurl' => admin_url('admin-ajax.php'),
-            'baseUrl' => ELESPARE_DIR_URL,
-            'externalUrl' => 'https://raw.githubusercontent.com/afthemes/elespare-demo-data/master/free',
-            'apiUrl' => site_url() . '/index.php?rest_route=/',
-            'currentPage' => $id,
-            'key' => '',
-            'host' => $_SERVER['HTTP_HOST'],
-
-        ));
-    }
-
-    public function elespare_activation_redirect($plugin)
-    {
-        if ($plugin == plugin_basename(ELESPARE)) {
-            $redirect_url = esc_url_raw(add_query_arg(['page' => 'elespare_dashboard'], admin_url('admin.php')));
-            wp_safe_redirect($redirect_url);
-            exit;
-        }
-    }
+  }
 }
 
 // Instantiate Elespare.

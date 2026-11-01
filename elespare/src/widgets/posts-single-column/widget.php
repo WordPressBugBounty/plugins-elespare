@@ -94,6 +94,11 @@ class PostSingleColumn extends Widget_Base
     return array('elespare');
   }
 
+  public function get_style_depends()
+  {
+    return ['elespare-posts_single_column'];
+  }
+
   /**
    * Register the widget controls.
    *

@@ -78,7 +78,7 @@ class PostSlider extends Widget_Base
 
   public function get_style_depends()
   {
-    return array('slick');
+    return array('slick', 'elespare-posts_slider');
   }
   /**
    * load scripts
@@ -105,6 +105,7 @@ class PostSlider extends Widget_Base
   {
     return array('elespare');
   }
+
 
 
 
@@ -1797,7 +1798,7 @@ class PostSlider extends Widget_Base
                 }
                 if ('yes' ==  $settings['show_category']) {
                   if ($layouts == 'slider-style-7') {
-                    echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_layout_style']));
+                    echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_layout_style']) ?? '');
                   }
                 }
                 ?>
@@ -1807,7 +1808,7 @@ class PostSlider extends Widget_Base
                 <?php
                 if ('yes' ==  $settings['show_category']) {
                   if ($layouts != 'slider-style-7') {
-                    echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_layout_style']));
+                    echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_layout_style']) ?? '');
                   }
                 }
                 ?>

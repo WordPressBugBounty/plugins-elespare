@@ -97,6 +97,11 @@ class SiteTitle extends Widget_Base
     return ['elespare'];
   }
 
+  public function get_style_depends()
+  {
+    return ['elespare-site_title'];
+  }
+
 
   /**
    * Register site title controls.

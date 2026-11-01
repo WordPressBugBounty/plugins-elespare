@@ -94,6 +94,11 @@ class PostList extends Widget_Base
     return array('elespare');
   }
 
+  public function get_style_depends()
+  {
+    return ['elespare-posts_list'];
+  }
+
   /**
    * Register the widget controls.
    *

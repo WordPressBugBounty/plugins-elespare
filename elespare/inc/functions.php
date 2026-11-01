@@ -170,7 +170,7 @@ if (!function_exists('elespare_posts_express_list_show_category')) {
         } else {
           $cs = 'none';
         }
-      } else if ('express-style-4') {
+      } else if ($cs == 'express-style-4') { // Fixed: added missing $cs ==
         $cs = 'none';
       } else if ($cs == 'express-style-2' || $cs == 'express-style-3') {
         $cs = 'border';
@@ -178,7 +178,6 @@ if (!function_exists('elespare_posts_express_list_show_category')) {
         $cs = 'solid';
       }
     }
-
 
     if ($widget_name == 'post-express-list') {
       if ($cs == 'express-style-3' || $cs == 'express-style-6') {
@@ -199,10 +198,12 @@ if (!function_exists('elespare_posts_express_list_show_category')) {
         $cs = 'solid';
       }
     }
-    echo wp_kses_post(elespare_posts_grid_get_categories_list($cs));
+
+    // Fix: Ensure we never pass null to wp_kses_post()
+    $categories_list = elespare_posts_grid_get_categories_list($cs);
+    echo wp_kses_post($categories_list ?? '');
   }
 }
-
 
 /**
  *

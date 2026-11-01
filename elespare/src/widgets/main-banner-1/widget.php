@@ -97,7 +97,7 @@ class MainBannerOne extends Widget_Base
   }
   public function get_style_depends()
   {
-    return array('slick');
+    return array('slick', 'elespare-main_banner_1');
   }
   public function get_script_depends()
   {
@@ -4499,11 +4499,11 @@ class MainBannerOne extends Widget_Base
                         if ('yes' ==  $settings['show_category']) {
                           if ($layouts == 'main-banner-style-5' || $layouts == 'main-banner-style-6' || $layouts == 'main-banner-style-17' || $layouts == 'main-banner-style-18' || $layouts == 'main-banner-style-20' || $layouts == 'main-banner-style-21' || $layouts == 'main-banner-style-19' || $layouts == 'main-banner-style-22' || $layouts == 'main-banner-style-23' || $layouts == 'main-banner-style-24') {
 
-                            echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_layout_style']));
+                            echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_trending_layout_style']) ?? '');
                           }
                           if ($layouts == 'main-banner-style-13' || $layouts == 'main-banner-style-14') {
 
-                            echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_layout_style3']));
+                            echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_layout_style3']) ?? '');
                           }
                         }
                         ?>
@@ -4520,15 +4520,15 @@ class MainBannerOne extends Widget_Base
                         if ('yes' ==  $settings['show_category']) {
                           if ($layouts == 'main-banner-style-1' || $layouts == 'main-banner-style-2' || $layouts == 'main-banner-style-3' || $layouts == 'main-banner-style-4' ||  $layouts == 'main-banner-style-7' || $layouts == 'main-banner-style-8') {
 
-                            echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_layout_style']));
+                            echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_layout_style']) ?? '');
                           }
                           if ($layouts == 'main-banner-style-25' || $layouts == 'main-banner-style-26' || $layouts == 'main-banner-style-27' || $layouts == 'main-banner-style-28' || $layouts == 'main-banner-style-29' || $layouts == 'main-banner-style-30' || $layouts == 'main-banner-style-31' || $layouts == 'main-banner-style-32') {
 
-                            echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_layout_style2']));
+                            echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_layout_style2']) ?? '');
                           }
                           if ($layouts == 'main-banner-style-9' || $layouts == 'main-banner-style-10' || $layouts == 'main-banner-style-11' || $layouts == 'main-banner-style-12' || $layouts == 'main-banner-style-15' || $layouts == 'main-banner-style-16') {
 
-                            echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_layout_style3']));
+                            echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_layout_style3']) ?? '');
                           }
                         }
                       }
@@ -4586,13 +4586,13 @@ class MainBannerOne extends Widget_Base
 
                         if ($layouts == 'main-banner-style-1' || $layouts == 'main-banner-style-2' || $layouts == 'main-banner-style-3' || $layouts == 'main-banner-style-4' || $layouts == 'main-banner-style-5' || $layouts == 'main-banner-style-6' || $layouts == 'main-banner-style-7' || $layouts == 'main-banner-style-8' || $layouts == 'main-banner-style-17'  || $layouts == 'main-banner-style-18' || $layouts == 'main-banner-style-19' || $layouts == 'main-banner-style-20' || $layouts == 'main-banner-style-21' || $layouts == 'main-banner-style-22' || $layouts == 'main-banner-style-23' || $layouts == 'main-banner-style-24') {
 
-                          echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_grid_layout_style']));
+                          echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_grid_layout_style']) ?? '');
                         }
 
 
                         if ($layouts == 'main-banner-style-9' || $layouts == 'main-banner-style-10' || $layouts == 'main-banner-style-11' || $layouts == 'main-banner-style-12' || $layouts == 'main-banner-style-13' || $layouts == 'main-banner-style-14' || $layouts == 'main-banner-style-15' || $layouts == 'main-banner-style-16') {
 
-                          echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_grid_layout_style3']));
+                          echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_grid_layout_style3']) ?? '');
                         }
                       }
                     }
@@ -4610,7 +4610,7 @@ class MainBannerOne extends Widget_Base
                         // }
                         if ($layouts == 'main-banner-style-25' || $layouts == 'main-banner-style-26' || $layouts == 'main-banner-style-27' || $layouts == 'main-banner-style-28' || $layouts == 'main-banner-style-29' || $layouts == 'main-banner-style-30' || $layouts == 'main-banner-style-31' || $layouts == 'main-banner-style-32') {
 
-                          echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_grid_layout_style2']));
+                          echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_grid_layout_style2']) ?? '');
                         }
                       }
                     }
@@ -4655,13 +4655,13 @@ class MainBannerOne extends Widget_Base
 
                           if ($layouts == 'main-banner-style-1' || $layouts == 'main-banner-style-2' || $layouts == 'main-banner-style-3' || $layouts == 'main-banner-style-4' || $layouts == 'main-banner-style-5' || $layouts == 'main-banner-style-6' || $layouts == 'main-banner-style-7' || $layouts == 'main-banner-style-8' || $layouts == 'main-banner-style-17'  || $layouts == 'main-banner-style-18' || $layouts == 'main-banner-style-19' || $layouts == 'main-banner-style-20' || $layouts == 'main-banner-style-21' || $layouts == 'main-banner-style-22' || $layouts == 'main-banner-style-23' || $layouts == 'main-banner-style-24') {
 
-                            echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_grid_layout_style']));
+                            echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_grid_layout_style']) ?? '');
                           }
 
 
                           if ($layouts == 'main-banner-style-9' || $layouts == 'main-banner-style-10' || $layouts == 'main-banner-style-11' || $layouts == 'main-banner-style-12' || $layouts == 'main-banner-style-13' || $layouts == 'main-banner-style-14' || $layouts == 'main-banner-style-15' || $layouts == 'main-banner-style-16') {
 
-                            echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_grid_layout_style3']));
+                            echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_grid_layout_style3']) ?? '');
                           }
                         }
                       }
@@ -4679,7 +4679,7 @@ class MainBannerOne extends Widget_Base
                           // }
                           if ($layouts == 'main-banner-style-25' || $layouts == 'main-banner-style-26' || $layouts == 'main-banner-style-27' || $layouts == 'main-banner-style-28' || $layouts == 'main-banner-style-29' || $layouts == 'main-banner-style-30' || $layouts == 'main-banner-style-31' || $layouts == 'main-banner-style-32') {
 
-                            echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_grid_layout_style2']));
+                            echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_grid_layout_style2']) ?? '');
                           }
                         }
                       }
@@ -4752,7 +4752,7 @@ class MainBannerOne extends Widget_Base
 
                     if ('yes' ==  $settings['show_category_on_trending']) {
 
-                      echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_trending_layout_style']));
+                      echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_trending_layout_style']) ?? '');
                     }
                     elespare_get_posts_title($settings['show_title'], get_the_title(), get_the_permalink());
 

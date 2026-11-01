@@ -20,7 +20,7 @@ a.elespare-pro-link {
 
 
 .wrap.elespare-wrap{
-  max-width: 1140px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
@@ -1249,13 +1249,16 @@ a.elespare-notice-dismiss {
   text-align: center;
 }
 
-.ele-templates-demo-lists .ele-library-templates-header {
+.ele-templates-demo-lists .ele-library-templates-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
+.themes-panel.news-panel{
+  /* align-items: center; */
+  text-align: start;
+}
 .ele-library-templates-header .ele-logo-area {
     text-align: left;
     padding-left: 15px;
@@ -1484,6 +1487,19 @@ a.elespare-notice-dismiss {
   color: #f42e3c;
   display: inline-block;
   padding: 7px 16px;
+}
+.ele-upgrade a.ele-all-themes-plan {
+margin: 0 10px;
+}
+
+.ele-upgrade a.ele-all-themes-plan {  
+  border: 1px solid #f42e3c;
+  background-color: #fff5f6;
+  color: #f42e3c;
+}
+.ele-upgrade a.ele-all-themes-plan:hover {  
+  border: 1px solid #000;
+  color: #fff;
 }
 
 .ele-library-templates .ele-library-template-footer .elespare-immport-btn:hover {

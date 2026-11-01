@@ -101,7 +101,7 @@ class PostBannerOne extends Widget_Base
   }
   public function get_style_depends()
   {
-    return ['slick'];
+    return ['slick', 'elespare-posts_banner_1'];
   }
 
   /**
@@ -2435,7 +2435,7 @@ class PostBannerOne extends Widget_Base
                     <?php
                     if ('yes' ==  $settings['show_category']) {
 
-                      echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_layout_style']));
+                      echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_layout_style']) ?? '');
                     }
                     elespare_get_posts_title($settings['show_title'], get_the_title(), get_the_permalink());
                     $this->posts_grid_render_metadata();
@@ -2482,7 +2482,7 @@ class PostBannerOne extends Widget_Base
                     <?php
                     if ('yes' ==  $settings['show_category']) {
 
-                      echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_layout_style']));
+                      echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_layout_style']) ?? '');
                     }
 
                     elespare_get_posts_title($settings['show_title'], get_the_title(), get_the_permalink());
@@ -2556,7 +2556,7 @@ class PostBannerOne extends Widget_Base
 
                     if ('yes' ==  $settings['show_category_on_trending']) {
 
-                      echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_trending_layout_style']));
+                      echo wp_kses_post(elespare_posts_grid_get_categories_list($settings['category_trending_layout_style']) ?? '');
                     }
                     elespare_get_posts_title($settings['show_title'], get_the_title(), get_the_permalink());
 

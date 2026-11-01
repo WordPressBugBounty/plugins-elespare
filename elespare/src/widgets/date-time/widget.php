@@ -40,6 +40,10 @@ class DateTime extends Widget_Base
   {
     return ['elespare'];
   }
+  public function get_style_depends()
+  {
+    return ['elespare-date_time'];
+  }
   protected function register_controls()
   {
     $this->elespare_date_time_content_Layout_options();

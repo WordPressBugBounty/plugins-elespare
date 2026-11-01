@@ -95,6 +95,11 @@ class Author extends Widget_Base
     return array('elespare');
   }
 
+  public function get_style_depends()
+  {
+    return ['elespare-author'];
+  }
+
 
   /**
    * Register the widget controls.

@@ -1,30 +1,33 @@
-<?php 
+<?php
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
-if(!class_exists('Elespare_Dashboard')){
-    class Elespare_Dashboard{
+if (!class_exists('Elespare_Dashboard')) {
+    class Elespare_Dashboard
+    {
         private static $instance;
 
-		public static function instance() {
-			if ( ! isset( self::$instance ) ) {
-				self::$instance = new self();
-			}
-			return self::$instance;
-		}
-
-        public function __construct(){
-            
-            add_action( 'admin_menu', array($this,'elespare_register_menu'));
-            add_action( 'admin_enqueue_scripts', array( $this, 'load_admin_style' ) );
-            include_once ELESPARE_DIR_PATH .'inc/admin/widgets-list.php';
-            include_once ELESPARE_DIR_PATH .'inc/admin/class-dashboard.php';            
-            include_once ELESPARE_DIR_PATH .'inc/admin/notice-upgrade.php';
-            include_once ELESPARE_DIR_PATH .'inc/admin/create-page.php';
-            
+        public static function instance()
+        {
+            if (! isset(self::$instance)) {
+                self::$instance = new self();
+            }
+            return self::$instance;
         }
 
-        public function load_admin_style(){
+        public function __construct()
+        {
+
+            add_action('admin_menu', array($this, 'elespare_register_menu'));
+            add_action('admin_enqueue_scripts', array($this, 'load_admin_style'));
+            include_once ELESPARE_DIR_PATH . 'inc/admin/widgets-list.php';
+            include_once ELESPARE_DIR_PATH . 'inc/admin/class-dashboard.php';
+            include_once ELESPARE_DIR_PATH . 'inc/admin/notice-upgrade.php';
+            include_once ELESPARE_DIR_PATH . 'inc/admin/create-page.php';
+        }
+
+        public function load_admin_style()
+        {
 
 
             wp_enqueue_style(
@@ -33,10 +36,10 @@ if(!class_exists('Elespare_Dashboard')){
                 array(),
                 ELESPARE_VERSION
             );
-
         }
 
-        public function elespare_register_menu(){
+        public function elespare_register_menu()
+        {
 
 
             $elespare_icon = <<< SVG
@@ -53,27 +56,27 @@ if(!class_exists('Elespare_Dashboard')){
 SVG;
 
             add_menu_page(
-            __('Elespare', 'elespare'), // Page Title.
-            __('Elespare', 'elespare'), // Menu Title.
-            'edit_posts', // Capability.
-            'elespare_dashboard', // Menu slug.
-            array($this,'elespare_render_starter_page' ),
-            'data:image/svg+xml;base64,' . base64_encode($elespare_icon) ,
-            50
+                __('Elespare', 'elespare'), // Page Title.
+                __('Elespare', 'elespare'), // Menu Title.
+                'edit_posts', // Capability.
+                'elespare_dashboard', // Menu slug.
+                array($this, 'elespare_render_starter_page'),
+                'data:image/svg+xml;base64,' . base64_encode($elespare_icon),
+                50
             );
-            
+
 
             // Check if Elementor installed and activated.
-            if ( did_action( 'elementor/loaded' ) ) {
-            add_submenu_page(
-                'elespare_dashboard', // Parent slug.
-                __( 'Design Library', 'elespare' ), // Page title.
-                __( 'Design Library', 'elespare' ), // Menu title.
-                'manage_options', // Capability.
-                'elespare_dashboard', // Menu slug.
-                array( $this, 'elespare_render_starter_page' ) // Callback function.
+            if (did_action('elementor/loaded')) {
+                add_submenu_page(
+                    'elespare_dashboard', // Parent slug.
+                    __('Templates Kits', 'elespare'), // Page title.
+                    __('Templates Kits', 'elespare'), // Menu title.
+                    'manage_options', // Capability.
+                    'elespare_dashboard', // Menu slug.
+                    array($this, 'elespare_render_starter_page') // Callback function.
 
-            );
+                );
 
                 add_submenu_page(
                     'elespare_dashboard', // Parent slug.
@@ -88,84 +91,113 @@ SVG;
 
             add_submenu_page(
                 'elespare_dashboard', // Parent slug.
-                __( 'Explore More', 'elespare' ), // Page title.
-                __( 'Explore More', 'elespare' ), // Menu title.
+                __('Dashboard', 'elespare'), // Page title.
+                __('Dashboard', 'elespare'), // Menu title.
                 'manage_options', // Capability.
                 'elespare_explore_more', // Menu slug.
-                array( $this, 'elespare_render_menu_page' ) // Callback function.
+                array($this, 'elespare_render_menu_page') // Callback function.
 
             );
 
-            if(ELESPARE_SHOW_PRO_NOTICES){
+            $badge_free = __('Free', 'elespare'); // Dynamic count variable
+            add_submenu_page(
+                'elespare_dashboard',
+                __('Themes', 'elespare'),
+                sprintf(
+                    __('Themes %s', 'elespare'),
+                    '<span class="update-plugins count-' . esc_attr($badge_free) . '"><span class="plugin-count">' . esc_html($badge_free) . '</span></span>'
+                ),
+                'manage_options',
+                esc_url('https://afthemes.com/free-wordpress-themes/')
+
+            );
+            $badge_free = __('New', 'elespare'); // Dynamic count variable
+            add_submenu_page(
+                'elespare_dashboard',
+                __('Reviews', 'elespare'),
+                sprintf(
+                    __('Reviews %s', 'elespare'),
+                    '<span class="update-plugins count-' . esc_attr($badge_free) . '"><span class="plugin-count">' . esc_html($badge_free) . '</span></span>'
+                ),
+                'manage_options',
+                esc_url('https://wordpress.org/support/plugin/elespare/reviews/?filter=5')
+
+            );
+
+            if (ELESPARE_SHOW_PRO_NOTICES) {
                 add_submenu_page(
                     'elespare_dashboard', // Parent slug.
-                    __( 'Upgrade', 'elespare' ), // Page title.
-                    __( "<span class='dashicons dashicons-star-filled' style='font-size: 17px'></span> Upgrade Pro ", 'elespare' ), // Menu title.
+                    __('Upgrade', 'elespare'), // Page title.
+                    __("<span class='dashicons dashicons-star-filled' style='font-size: 17px'></span> Upgrade Pro ", 'elespare'), // Menu title.
                     'manage_options', // Capability.
                     esc_url('https://afthemes.com/plugins/elespare/') // Callback function.
 
                 );
             }
 
-            add_action('admin_head', array($this,'elespare_correct_current_menu'), 50);
+            add_action('admin_head', array($this, 'elespare_correct_current_menu'), 50);
         }
 
-        public function elespare_render_menu_page(){
+        public function elespare_render_menu_page()
+        {
             Elespare_General_Dashboard::elespare_render_menu_page();
         }
 
-        public function elespare_render_starter_page(){?>
-         <div id="elespare-demo-list"></div>
-        
+        public function elespare_render_starter_page()
+        { ?>
+            <div id="elespare-demo-list"></div>
+
         <?php }
 
-        public function elespare_header_footer_dashboard(){
-            $url = admin_url().'edit.php?post_type=elespare_builder';
-            ?>
-            <script>location.href='<?php echo esc_url($url);?>';</script>
+        public function elespare_header_footer_dashboard()
+        {
+            $url = admin_url() . 'edit.php?post_type=elespare_builder';
+        ?>
+            <script>
+                location.href = '<?php echo esc_url($url); ?>';
+            </script>
             <?php
         }
         /**
          * Add/Remove appropriate CSS classes to Menu so Submenu displays open and the Menu link is styled appropriately.
          */
-        public function elespare_correct_current_menu(){
+        public function elespare_correct_current_menu()
+        {
             $screen = get_current_screen();
 
-            if ( $screen->id == 'elespare_builder' || $screen->id == 'edit-elespare_builder' ) {
+            if ($screen->id == 'elespare_builder' || $screen->id == 'edit-elespare_builder') {
             ?>
-            <script type="text/javascript">
-            jQuery(document).ready(function($) {
-                $('#toplevel_page_elespare_dashboard').addClass('wp-has-current-submenu wp-menu-open menu-top menu-top-first').removeClass('wp-not-current-submenu');
-                $('#toplevel_page_elespare_dashboard > a').addClass('wp-has-current-submenu').removeClass('wp-not-current-submenu');
-            });
-            </script>
+                <script type="text/javascript">
+                    jQuery(document).ready(function($) {
+                        $('#toplevel_page_elespare_dashboard').addClass('wp-has-current-submenu wp-menu-open menu-top menu-top-first').removeClass('wp-not-current-submenu');
+                        $('#toplevel_page_elespare_dashboard > a').addClass('wp-has-current-submenu').removeClass('wp-not-current-submenu');
+                    });
+                </script>
             <?php
             }
-        
-            if ( $screen->id == 'elespare_builder' ) {
+
+            if ($screen->id == 'elespare_builder') {
             ?>
-            <script type="text/javascript">
-            jQuery(document).ready(function($) {
-                $('a[href$="elespare_header_footer"]').parent().addClass('current');
-                $('a[href$="elespare_header_footer"]').addClass('current');
-            });
-            </script>
+                <script type="text/javascript">
+                    jQuery(document).ready(function($) {
+                        $('a[href$="elespare_header_footer"]').parent().addClass('current');
+                        $('a[href$="elespare_header_footer"]').addClass('current');
+                    });
+                </script>
             <?php
             }
-        
-            if ( $screen->id == 'edit-elespare_builder' ) {
+
+            if ($screen->id == 'edit-elespare_builder') {
             ?>
-            <script type="text/javascript">
-            jQuery(document).ready(function($) {
-                $('a[href$="elespare_header_footer"]').parent().addClass('current');
-                $('a[href$="elespare_header_footer"]').addClass('current');
-            });
-            </script>
-            <?php
+                <script type="text/javascript">
+                    jQuery(document).ready(function($) {
+                        $('a[href$="elespare_header_footer"]').parent().addClass('current');
+                        $('a[href$="elespare_header_footer"]').addClass('current');
+                    });
+                </script>
+<?php
             }
         }
     }
     Elespare_Dashboard::instance();
 }
-
-

@@ -92,6 +92,11 @@ class SocialLinks extends Widget_Base
     return array('elespare');
   }
 
+  public function get_style_depends()
+  {
+    return ['elespare-social_links'];
+  }
+
   protected static function elespare_get_social_names()
   {
     return [

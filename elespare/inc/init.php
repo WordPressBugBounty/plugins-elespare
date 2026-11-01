@@ -80,6 +80,8 @@ if (!class_exists('AFT_Elespare_Addons')) {
                 'apiUrl' => site_url() . '/index.php?rest_route=/',
                 'newPageUrl' => admin_url('post-new.php?post_type=page&elespare_create_block'),
                 'logo' => ELESPARE_DIR_URL . 'inc/admin/svg/elespare.png',
+                'adminAssetsURL' => ELESPARE_DIR_URL . 'assets',
+                'pricingURL' => admin_url( 'admin.php?page=elespare_dashboard-pricing' ) 
             ));
         }
 

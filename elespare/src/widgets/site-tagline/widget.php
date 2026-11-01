@@ -52,7 +52,7 @@ class SiteTagline extends Widget_Base
    */
   public function get_title()
   {
-    return esc_html__('Site Taglinssssse', 'elespare');
+    return esc_html__('Site Tagline', 'elespare');
   }
 
   public function has_widget_inner_wrapper(): bool

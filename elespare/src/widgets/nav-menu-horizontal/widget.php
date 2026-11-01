@@ -91,6 +91,11 @@ class NavigationHorizontalMenu extends Widget_Base
     return array('elespare');
   }
 
+  public function get_style_depends()
+  {
+    return ['elespare-nav_menu_horizontal'];
+  }
+
   /**
    * Register Site Logo controls.
    *
@@ -141,7 +146,7 @@ class NavigationHorizontalMenu extends Widget_Base
           'default'      => array_keys($menus)[0],
           'save_default' => true,
           /* translators: %s Nav menu URL */
-          'description'  => sprintf(__('Go to the <a href="%s" target="_blank">Menus screen</a> to manage your menus.', 'elespare-pror'), admin_url('nav-menus.php')),
+          'description'  => sprintf(__('Go to the <a href="%s" target="_blank">Menus screen</a> to manage your menus.', 'elespare'), admin_url('nav-menus.php')),
         ]
       );
     } else {
@@ -867,11 +872,12 @@ class NavigationHorizontalMenu extends Widget_Base
 
     $this->add_render_attribute('elespare-widget-wrapper', 'class', ['elespare-navigation--widget elespare-navigation-wrapper horizontal', $settings['align'], $breakpoint_none_class, 'sub-hover', $layout_option]);
     $this->add_render_attribute('elespare-main-navigation', 'class', ['elespare-main-navigation elespare-nav-default elespare-nav elespare-header-navigation', ' elespare--hover-' .  $settings['pointer'], $settings['submenu_icon']]);
+    $close_icon = $settings['dropdown_close_icon']['value'] ?? '';
 ?>
     <div <?php $this->print_render_attribute_string('elespare-widget-wrapper'); ?> data-opt="sub-hover">
       <nav <?php $this->print_render_attribute_string('elespare-main-navigation'); ?>
         aria-label="<?php esc_attr_e('Primary navigation', 'elespare'); ?>"
-        data-closeicon="<?php echo esc_attr($settings['dropdown_close_icon']['value']) ?>">
+        data-closeicon="<?php echo esc_attr($close_icon); ?>">
         <?php
 
         $args = array(
@@ -890,8 +896,8 @@ class NavigationHorizontalMenu extends Widget_Base
       <?php
 
       if ('none' != $settings['break_points']) {
-        $ham_icon = $settings['toggle_icon']['value'];
-        $ham_close_icon = $settings['dropdown_close_icon']['value'];
+        $ham_icon = $settings['toggle_icon']['value'] ?? '';
+        $ham_close_icon = $settings['dropdown_close_icon']['value'] ?? '';
         $this->get_toggle($ham_icon, $ham_close_icon, $settings['layout_option']);
 
         if ($layout_option == 'drawer') {
@@ -906,7 +912,7 @@ class NavigationHorizontalMenu extends Widget_Base
         <div <?php $this->print_render_attribute_string('elespare-moblie-ham-menu'); ?>>
           <?php if ($layout_option == 'drawer') { ?>
             <a href="#"
-              class="elespare--close-menu-side-bar <?php echo esc_attr($settings['dropdown_close_icon']['value']) ?>"
+              class="elespare--close-menu-side-bar <?php echo esc_attr($ham_close_icon) ?>"
               aria-label="<?php echo esc_attr('Close menu', 'elespare'); ?>"></a>
           <?php } ?>
           <div class="elespare-menu-sidebar--wrapper">

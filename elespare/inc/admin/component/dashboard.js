@@ -79,6 +79,7 @@ const Dashboard = () => {
                                         <li className={`navbar-item settings ${navState == 'header' ? 'active' : 'inactive'}`} onClick={e => handleNavStateChange('header')} ><a>{__('Header', 'elespare')}</a></li>
                                         <li className={`navbar-item settings ${navState == 'footer' ? 'active' : 'inactive'}`} onClick={e => handleNavStateChange('footer')} ><a>{__('Footer', 'elespare')}</a></li>
                                         <li className={`navbar-item settings ${navState == 'blocks' ? 'active' : 'inactive'}`} onClick={e => handleNavStateChange('blocks')} ><a>{__('Blocks', 'elespare')}</a></li>
+                                        <li className={`navbar-item settings ${navState == 'themes' ? 'active' : 'inactive'}`} onClick={e => handleNavStateChange('themes')} ><a>{__('Themes', 'elespare')}</a></li>
 
                                     </ul>
                                 </>
@@ -88,7 +89,8 @@ const Dashboard = () => {
 
                     </div>
                     <div className="ele-upgrade">
-                        <a href="https://afthemes.com/plugins/elespare/pricing/" target="_blank">{__('Upgrade', 'elspare')}</a>
+                        <a href={`${ELELibrary.pricingURL}`} className="ele-upgrade" target="_blank">{__('Upgrade', 'elspare')}</a>
+                        <a href="https://afthemes.com/free-wordpress-themes/" className="ele-all-themes-plan" target="_blank">{__('Free WordPress Themes', 'elspare')}</a>
                     </div>
                 </div>
                 <div className="ele-templates-demo-lists-body">

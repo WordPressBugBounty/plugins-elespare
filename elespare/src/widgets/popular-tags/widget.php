@@ -40,6 +40,10 @@ class PopularTags extends Widget_Base
   {
     return ['elespare'];
   }
+  public function get_style_depends()
+  {
+    return ['elespare-popular_tags'];
+  }
 
   protected function register_controls()
   {

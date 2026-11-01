@@ -84,7 +84,7 @@ if(!class_exists('Elespare_General_Dashboard')){
                                 ?>
                             </div>
                             <div class="elespare-all-blocks-button">
-                                <a href="https://afthemes.com/plugins/elespare/pricing/" class="elespare-button" target="_blank"
+                                <a href="<?php echo esc_url( admin_url( 'admin.php?page=elespare_dashboard-pricing' ) ); ?>" class="elespare-button" target="_blank"
                                                                           title="<?php esc_attr_e('Unlock All Templates', 'elespare') ?>"><?php esc_attr_e('Unlock All Templates', 'elespare') ?></a>
                             </div>
                         </article>
@@ -107,7 +107,7 @@ if(!class_exists('Elespare_General_Dashboard')){
                                     foreach ($elespare_blocks as $block):
                                         $blocks_name = $block['name'];
                                         $icon_url = plugins_url("svg/" .$block['slug'] . ".svg", __FILE__);
-                                        $demo_url = 'https://afthemes.com/plugins/elespare/layout/'.$block['slug'];
+                                        $demo_url = 'https://afthemes.com/plugins/elespare/'.$block['slug'];
 
                                         ?>
                                         <a class="elespare-explore-btn" href="<?php echo esc_url($demo_url) ?>" target="_blank">

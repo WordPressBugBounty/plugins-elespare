@@ -55,6 +55,11 @@ class CustomLinkButton extends Widget_Base
     return array('elespare');
   }
 
+  public function get_style_depends()
+  {
+    return ['elespare-custom_link_button'];
+  }
+
   /**
    * Register the widget controls.
    *

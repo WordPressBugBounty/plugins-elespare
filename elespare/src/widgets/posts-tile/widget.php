@@ -96,6 +96,11 @@ class PostTile extends Widget_Base
     return array('elespare');
   }
 
+  public function get_style_depends()
+  {
+    return ['elespare-posts_tile'];
+  }
+
   /**
    * Register the widget controls.
    *
