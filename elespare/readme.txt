@@ -2,11 +2,11 @@
 Author URI: https://afthemes.com/
 Plugin URI: https://afthemes.com/plugins/elespare/
 Contributors: elespare, afthemes
-Tags: elementor, blog, news, magazine, post grid, header footer builder, news ticker, post slider
+Tags: elementor, post carousel, post grid, header footer builder, news ticker
 Donate link: https://afthemes.com/all-themes-plan/
 Tested up to: 7.1
 Requires PHP: 5.3
-Stable tag: 4.2.0
+Stable tag: 4.2.1
 License: GPLv3 or later
 License URI: https://opensource.org/licenses/GPL-3.0 GPL-3.0-only
 
@@ -18,7 +18,7 @@ Lightweight Elementor addon for news, blog & magazine sites with post grids, sli
 Transform your website effortlessly with [EleSpare](https://afthemes.com/plugins/elespare/): Craft impressive [Blog](https://afthemes.com/plugins/elespare/fashion/), [News](https://demos.afthemes.com/covernews/elenews/), or [Magazine](https://demos.afthemes.com/covernews/elenews/home-3/) sites using Elementor. No coding skills needed, just [one-click import](https://www.youtube.com/watch?v=8Jq53Pywmk0) for highly customizable templates. Showcase your posts in various stunning formats – [banners, grids, lists, carousels, sliders, tickers, and more](https://afthemes.com/plugins/elespare/layout-page/) – for FREE!
 [youtube https://www.youtube.com/watch?v=8Jq53Pywmk0]
 
-[Try Live Demo](https://tastewp.com/new/?pre-installed-plugin-slug=elespare) | [Explore More](https://afthemes.com/plugins/elespare/) | [Themes](https://afthemes.com/) | [All Demos](https://afthemes.com/plugins/elespare/all-demos/) | [Template Kits](https://afthemes.com/plugins/elespare/layout-page/) | [Docs](https://afthemes.com/plugins/elespare/docs/) | [Support](https://afthemes.com/supports/) | [Upgrade to Pro](https://afthemes.com/plugins/elespare/pricing/)
+[Try Demo](https://tastewp.com/new/?pre-installed-plugin-slug=elespare) | [Explore More](https://afthemes.com/plugins/elespare/) | [Free Themes](https://afthemes.com/free-wordpress-theme) | [All Demos](https://afthemes.com/plugins/elespare/all-demos/) | [Templates](https://afthemes.com/plugins/elespare/layout-page/) | [Docs](https://afthemes.com/plugins/elespare/elespare-docs/) | [Support](https://afthemes.com/supports/) | [Upgrade to Pro](https://afthemes.com/all-themes-plan)
 
 ---
 

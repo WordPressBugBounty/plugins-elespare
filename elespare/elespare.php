@@ -8,7 +8,7 @@
  * Plugin Name: Elespare - Ultimate Blog Addons for Elementor
  * Description: Easy Post Grids, Sliders, Templates, Header/Footer Builder, and Starter Site Imports
  * Plugin URI:  https://afthemes.com/plugins/elespare/
- * Version:     4.2.0
+ * Version:     4.2.1
  * Elementor tested up to:  4.3.5
  * Elementor Pro tested up to:  4.3.5
  * Author:      Elespare
@@ -101,7 +101,7 @@ final class Elespare
     // wp_register_style('elespare-posts-grid', plugins_url('dist/elespare.style.build.min.css', ELESPARE), array(), self::VERSION);
     // wp_enqueue_style('elespare-posts-grid');
 
-    wp_register_style('elespare-common-style', plugins_url('dist/common-styles.css', ELESPARE), array(), self::VERSION);
+    wp_register_style('elespare-common-style', plugins_url('dist/common_styles.css', ELESPARE), array(), self::VERSION);
     wp_enqueue_style('elespare-common-style');
 
     $styles = [
