@@ -6,7 +6,7 @@ Tags: elementor, post carousel, post grid, header footer builder, news ticker
 Donate link: https://afthemes.com/all-themes-plan/
 Tested up to: 7.1
 Requires PHP: 5.3
-Stable tag: 4.2.1
+Stable tag: 4.2.2
 License: GPLv3 or later
 License URI: https://opensource.org/licenses/GPL-3.0 GPL-3.0-only
 
