@@ -8,9 +8,9 @@
  * Plugin Name: Elespare - Ultimate Blog Addons for Elementor
  * Description: Easy Post Grids, Sliders, Templates, Header/Footer Builder, and Starter Site Imports
  * Plugin URI:  https://afthemes.com/plugins/elespare/
- * Version:     4.2.2
- * Elementor tested up to:  4.3.5
- * Elementor Pro tested up to:  4.3.5
+ * Version:     4.2.3
+ * Elementor tested up to:  4.3.6
+ * Elementor Pro tested up to:  4.3.6
  * Author:      Elespare
  * Author URI:  https://afthemes.com/plugins/elespare/
  * Text Domain: elespare
@@ -22,7 +22,7 @@ if (!defined('ABSPATH')) {
   exit;
 }
 
-defined('ELESPARE_VERSION') or define('ELESPARE_VERSION', '4.0.0');
+defined('ELESPARE_VERSION') or define('ELESPARE_VERSION', '4.2.3');
 defined('ELESPARE') or define('ELESPARE', __FILE__);
 defined('ELESPARE_PLUGIN_BASE') or define('ELESPARE_PLUGIN_BASE', plugin_basename(ELESPARE));
 defined('ELESPARE_DIR_PATH') or define('ELESPARE_DIR_PATH', plugin_dir_path(ELESPARE));

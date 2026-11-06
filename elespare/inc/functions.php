@@ -948,3 +948,126 @@ function elespare_list_popular_categories($taxonomy = 'category', $title = "Popu
 
   echo wp_kses_post($html);
 }
+
+
+add_action('wp_ajax_elespare_templatespare_plugin_installer_activation', 'elespare_templatespare_plugin_installer_activation');
+
+function elespare_templatespare_plugin_installer_activation()
+{
+
+  if (! current_user_can('install_plugins'))
+    wp_die(__('Sorry, you are not allowed to install plugins on this site.', 'elespare'));
+
+
+  $nonce = $_POST["nonce"];
+
+  // Check our nonce, if they don't match then bounce!
+  if (! wp_verify_nonce($nonce, 'aft_installer_nonce'))
+    wp_die(__('Error - unable to verify nonce, please try again.', 'elespare'));
+
+  $install = isset($_POST['install']) ? $_POST['install'] : '';
+  $activate = isset($_POST['activate']) ? $_POST['activate'] : '';
+  $page =  isset($_POST['page']) ? $_POST['page'] : '';
+  if (is_array($install)) {
+    $sanitinzed_plugins = array_map('sanitize_key', $install);
+  } else {
+    $sanitinzed_plugins = sanitize_key($install);
+  }
+  $is_active = 'false';
+  if (is_array($activate)) {
+    $is_active = 'true';
+    $sanitinzed_activate = array_map('sanitize_key', $activate);
+  } else {
+    $is_active = 'true';
+    $sanitinzed_activate = array(sanitize_key($activate));
+  }
+
+
+
+  // Include required libs for installation
+  require_once(ABSPATH . 'wp-admin/includes/plugin-install.php');
+  require_once(ABSPATH . 'wp-admin/includes/class-wp-upgrader.php');
+  require_once(ABSPATH . 'wp-admin/includes/class-wp-ajax-upgrader-skin.php');
+  require_once(ABSPATH . 'wp-admin/includes/class-plugin-upgrader.php');
+  $data = [];
+  // Get Plugin Info
+  if (!empty($sanitinzed_plugins)) {
+    foreach ($sanitinzed_plugins as $pl) {
+      $api = plugins_api(
+        'plugin_information',
+        array(
+          'slug' => $pl,
+          'fields' => array(
+            'short_description' => false,
+            'sections' => false,
+            'requires' => false,
+            'rating' => false,
+            'ratings' => false,
+            'downloaded' => false,
+            'last_updated' => false,
+            'added' => false,
+            'tags' => false,
+            'compatibility' => false,
+            'homepage' => false,
+            'donate_link' => false,
+          ),
+        )
+      );
+
+      $skin     = new WP_Ajax_Upgrader_Skin();
+      $upgrader = new Plugin_Upgrader($skin);
+
+      $upgrader->install($api->download_link);
+
+
+      if ($api->name) {
+        $status = 'success';
+        $msg = $api->name . ' successfully installed.';
+      } else {
+        $status = 'failed';
+        $msg = 'There was an error installing ' . $api->name . '.';
+      }
+      array_push($sanitinzed_activate, $pl);
+    }
+    $json = array(
+      'status' => 'success',
+      'url' => site_url() . '/wp-admin/admin.php?page=' . $page
+    );
+  }
+
+  $list_of_plugins = array_merge($sanitinzed_activate, $sanitinzed_activate);
+  $list_of_plugins  = array_filter($sanitinzed_activate, 'strlen');
+
+  if (!empty($list_of_plugins)) {
+    $data =  elespare_activate_plugin_list($sanitinzed_activate);
+  }
+
+  if ($data == 'success') {
+
+    $json = array(
+      'status' => 'success',
+      'url' => site_url() . '/wp-admin/admin.php?page=' . $page
+    );
+    return wp_send_json($json);
+  }
+}
+function elespare_activate_plugin_list($sanitinzed_activate)
+{
+  $count = 0;
+  $total = count($sanitinzed_activate);
+  foreach ($sanitinzed_activate as $plugin) {
+
+    // Tell TemplateSpare to skip Freemius during this AJAX activation.
+
+
+    $count++;
+    if ($plugin == 'elespare-pro') {
+      //deactivate_plugins('blockspare/blockspare.php', '',false, true);
+      activate_plugin('elespare-pro/elespare.php', '', false, true);
+    } else if (!is_plugin_active($plugin . '/' . $plugin . '.php')) {
+      activate_plugin($plugin . '/' . $plugin . '.php', '', false, true);
+    }
+  }
+
+  return "success";
+}

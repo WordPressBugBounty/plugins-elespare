@@ -15,7 +15,7 @@ if(!class_exists('Elespare_Dashboard')){
 
         public function __construct(){
             
-            add_action( 'admin_menu', array($this,'elespare_register_menu'));
+            //add_action( 'admin_menu', array($this,'elespare_register_menu'));
         }
 
         public function elespare_register_menu(){
